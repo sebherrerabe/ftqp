@@ -7,7 +7,7 @@ import './Team.css';
 const Team = () => {
     return (<div className="main-container" id='notre-equipe'>
         <div className="team-container">
-            <TitleLeft />
+            <TitleLeft title="Notre equipe" />
         </div>
     </div>);
 }

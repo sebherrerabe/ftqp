@@ -1,5 +1,12 @@
 .title-left {
   height: 80px;
   margin: 60px 200px auto 0;
-  background-color: cadetblue;
+  border-radius: 0 20px 20px 0;
+  background-color: #222a35;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.title-left h2 {
+  margin-left: 200px;
 }
