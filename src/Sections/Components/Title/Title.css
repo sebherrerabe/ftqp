@@ -3,6 +3,7 @@
 }
 .title h2 {
   text-transform: capitalize;
+  color: white;
 }
 
 .title.left {
