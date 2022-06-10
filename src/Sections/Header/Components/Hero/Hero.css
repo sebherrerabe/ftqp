@@ -39,3 +39,8 @@
     width: 120px;
     border-radius: 8px;
 }
+.icons{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
