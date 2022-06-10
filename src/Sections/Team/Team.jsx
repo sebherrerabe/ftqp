@@ -1,13 +1,14 @@
 
 
-import { TitleLeft } from '../Components/Titles/Titles';
+import Title from '../Components/Title/Title';
 
 import './Team.css';
+import { faPeopleGroup } from '@fortawesome/free-solid-svg-icons';
 
 const Team = () => {
     return (<div className="main-container" id='notre-equipe'>
         <div className="team-container">
-            <TitleLeft />
+            <Title who="right" title="Notre Equipe" icon={faPeopleGroup} />
         </div>
     </div>);
 }
