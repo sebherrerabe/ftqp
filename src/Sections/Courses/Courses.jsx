@@ -10,7 +10,7 @@ const Courses = () => {
         <div className="main-container" id="nos-formations">
             <div className="courses-container">
                 <Title title="Nos Formations" icon={faPersonDigging} direction="right" />
-                <div className="courses-desc mg-top-40">
+                <div className="section-desc mg-top-40">
                     <p className="desc">
                         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia
                         fuga accusamus sed saepe. Sint tempora incidunt, ducimus inventore
