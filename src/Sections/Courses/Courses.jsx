@@ -19,12 +19,32 @@ const Courses = () => {
                     </p>
                     <h3 className="mg-top-40">Nos conditions :</h3>
                     <ul className="mg-top-20">
-                        <li> Lorem ipsum dolor sit amet consectetur adipisicing elit. </li>
-                        <li> Lorem ipsum dolor sit amet consectetur adipisicing elit. </li>
-                        <li> Lorem ipsum dolor sit amet consectetur adipisicing elit. </li>
+                        <li> Avoir plus de 18 ans. </li>
+                        <li> Etre détenteur d'un CEB ou d'un CESI ou le niveau équivalent. </li>
+                        <li> Etre inscrit comme demandeur d'emploi et titulaire du document A15. </li>
                     </ul>
                 </div>
-                <Card direction='right' img={plafonnage} title="hello"> </Card>
+                <Card direction='left' img={plafonnage} title="Plafonnage" desc=" Avec des techniques 
+                manuelles et mécaniques,le plafonneur sera capable de réaliser, réparer et décorer et maîtrisera les techniques de mortier, cimentage et d'enduit." 
+                list={<ul>
+                     <li>Inscription toute l’année</li>
+                     <li>Formations qualifiante /+ou - 9 mois / Lundi - Jeudi</li>
+                     <li>Stage en entreprise / 4 semaines / Lundi - Vendredi</li>
+                     <li>Objectif: mise à l’emploi</li>
+                     <li>Contrat BF: 2€/heure, etc.</li>
+                    </ul> }  >
+                     </Card>
+                <Card direction='right' img={plafonnage} title="Maçonnerie" desc="  Outre la maçonnerie, le stagiaire pourra réaliser des travaux di'solation
+                        et d'étanchéité, des coffrages et ferraillages, du bétonnage,
+                        jointoiement et égouttage."
+                        list={<ul>
+                            <li> Inscription toute l’année</li>
+                             <li>Formations qualifiante /+ou - 9 mois / Lundi - Jeudi</li>
+                             <li>Stage en entreprise / 4 semaines / Lundi - Vendredi</li>
+                             <li>Objectif: mise à l’emploi</li>
+                             <li>Contrat BF: 2€/heure, etc.</li>
+                            </ul> } > 
+                            </Card>
             </div>
 
 
