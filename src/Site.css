@@ -38,6 +38,11 @@ p {
   letter-spacing: initial;
 }
 
+
+.section-desc {
+  margin: auto 200px;
+}
+
 .mg-top-10 {
   margin-top: 10px;
 }
