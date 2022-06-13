@@ -11,6 +11,7 @@
 .courses-card-container {
   width: 100%;
   display: flex;
+  margin-top: 50px;
 }
 .courses-card-container.left {
   justify-content: flex-start;
