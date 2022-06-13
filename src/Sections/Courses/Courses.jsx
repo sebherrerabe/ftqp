@@ -3,12 +3,13 @@ import Card from "./Components/Card/Card";
 
 import "./Courses.css";
 import { faPersonDigging } from "@fortawesome/free-solid-svg-icons";
+import plafonnage from './assets/plafonnage.jpg';
 
 const Courses = () => {
     return (
         <div className="main-container" id="nos-formations">
             <div className="courses-container">
-                <Title title="Nos Formations" icon={faPersonDigging} who="right" />
+                <Title title="Nos Formations" icon={faPersonDigging} direction="right" />
                 <div className="courses-desc mg-top-40">
                     <p className="desc">
                         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia
@@ -23,9 +24,7 @@ const Courses = () => {
                         <li> Lorem ipsum dolor sit amet consectetur adipisicing elit. </li>
                     </ul>
                 </div>
-                <div className="courses-card-container">
-                    <Card />
-                </div>
+                <Card direction='right' img={plafonnage} title="hello"> </Card>
             </div>
 
 
