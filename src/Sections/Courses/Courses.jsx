@@ -6,6 +6,28 @@ import { faPersonDigging } from "@fortawesome/free-solid-svg-icons";
 import plafonnage from './assets/plafonnage.jpg';
 
 const Courses = () => {
+    const text = [
+        {
+            id: 1,
+            text: "Inscription toute l année",
+        },
+        {
+            id: 2,
+            text: "Formations qualifiante /+ou - 9 mois / Lundi - Jeudi",
+        },
+        {
+            id: 3,
+            text: "Stage en entreprise / 4 semaines / Lundi - Vendred",
+        },
+        {
+            id: 4,
+            text: "Objectif: mise à l emploi",
+        },
+        {
+            id: 5,
+            text: "Contrat BF: 2€/heure, etc.",
+        }
+    ]
     return (
         <div className="main-container" id="nos-formations">
             <div className="courses-container">
@@ -25,26 +47,18 @@ const Courses = () => {
                     </ul>
                 </div>
                 <Card direction='left' img={plafonnage} title="Plafonnage" desc=" Avec des techniques 
-                manuelles et mécaniques,le plafonneur sera capable de réaliser, réparer et décorer et maîtrisera les techniques de mortier, cimentage et d'enduit." 
-                list={<ul>
-                     <li>Inscription toute l’année</li>
-                     <li>Formations qualifiante /+ou - 9 mois / Lundi - Jeudi</li>
-                     <li>Stage en entreprise / 4 semaines / Lundi - Vendredi</li>
-                     <li>Objectif: mise à l’emploi</li>
-                     <li>Contrat BF: 2€/heure, etc.</li>
-                    </ul> }  >
-                     </Card>
+                manuelles et mécaniques,le plafonneur sera capable de réaliser, réparer et décorer et maîtrisera les techniques de mortier, cimentage et d'enduit."
+                list={ <ul>
+                    {text.map(el => <li key={el.id}>{el.text}</li>)}
+                </ul>} >
+                </Card>
                 <Card direction='right' img={plafonnage} title="Maçonnerie" desc="  Outre la maçonnerie, le stagiaire pourra réaliser des travaux di'solation
                         et d'étanchéité, des coffrages et ferraillages, du bétonnage,
                         jointoiement et égouttage."
-                        list={<ul>
-                            <li> Inscription toute l’année</li>
-                             <li>Formations qualifiante /+ou - 9 mois / Lundi - Jeudi</li>
-                             <li>Stage en entreprise / 4 semaines / Lundi - Vendredi</li>
-                             <li>Objectif: mise à l’emploi</li>
-                             <li>Contrat BF: 2€/heure, etc.</li>
-                            </ul> } > 
-                            </Card>
+                    list={<ul>
+                        {text.map(el => <li key={el.id}>{el.text}</li>)}
+                    </ul>} >
+                </Card>
             </div>
 
 
