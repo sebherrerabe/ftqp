@@ -8,6 +8,12 @@ const Card = ({ img, direction, title, desc, list }) => {
 
     const [cardClass] = useState(direction === 'left' ? 'left' : 'right');
 
+
+
+    
+
+
+
     // const  myloop = () =>{
 
     //     const mylists = [
@@ -38,7 +44,7 @@ const Card = ({ img, direction, title, desc, list }) => {
 
 
     return (
-        <div className={"courses-card-container " + cardClass}>
+        <div className={"courses-card-container mg-top-30 " + cardClass}>
             <div className={"card-course " + cardClass}>
                 <div className={"card-photo " + cardClass} style={{ backgroundImage: `url(${img})` }}>
                     <div className={"card-box " + cardClass}>
