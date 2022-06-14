@@ -1,11 +1,15 @@
+import Title from "../Components/Title/Title";
+import ContactCard from "./components/ContactCard";
 
 import './Contact.css';
+import { faAddressCard } from "@fortawesome/free-solid-svg-icons";
 
 const Contact = () => {
     return (<div className="main-container">
-        <div className="left-div"></div>
-        <div className="iner-content"></div>
-        <div className="right-div"></div>
+                <Title title="Contact" icon={faAddressCard}></Title>
+                <ContactCard />
+            
+               
 
     </div>);
 }

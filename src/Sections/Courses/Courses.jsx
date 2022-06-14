@@ -1,50 +1,65 @@
 import Title from "../Components/Title/Title";
 import Card from "./Components/Card/Card";
 
+
 import "./Courses.css";
 import { faPersonDigging } from "@fortawesome/free-solid-svg-icons";
 import plafonnage from './assets/plafonnage.jpg';
 
 const Courses = () => {
+    const text = [
+        {
+            id: 1,
+            text: "Inscription toute l année",
+        },
+        {
+            id: 2,
+            text: "Formations qualifiante /+ou - 9 mois / Lundi - Jeudi",
+        },
+        {
+            id: 3,
+            text: "Stage en entreprise / 4 semaines / Lundi - Vendred",
+        },
+        {
+            id: 4,
+            text: "Objectif: mise à l emploi",
+        },
+        {
+            id: 5,
+            text: "Contrat BF: 2€/heure, etc.",
+        }
+    ]
     return (
         <div className="main-container" id="nos-formations">
             <div className="courses-container">
-                <Title title="Nos Formations" icon={faPersonDigging} direction="right" />
+                <Title title="Nos Formations" icon={faPersonDigging} direction="right"  />
                 <div className="section-desc mg-top-40">
-                    <p className="desc">
+                    <p className="desc mg-top-30">
                         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia
                         fuga accusamus sed saepe. Sint tempora incidunt, ducimus inventore
                         officiis vitae temporibus. Libero distinctio unde facere aperiam? Sunt
                         nihil deleniti vel.
                     </p>
                     <h3 className="mg-top-40">Nos conditions :</h3>
-                    <ul className="mg-top-20">
+                    <ul className="mg-top-30">
                         <li> Avoir plus de 18 ans. </li>
                         <li> Etre détenteur d'un CEB ou d'un CESI ou le niveau équivalent. </li>
                         <li> Etre inscrit comme demandeur d'emploi et titulaire du document A15. </li>
                     </ul>
                 </div>
                 <Card direction='left' img={plafonnage} title="Plafonnage" desc=" Avec des techniques 
-                manuelles et mécaniques,le plafonneur sera capable de réaliser, réparer et décorer et maîtrisera les techniques de mortier, cimentage et d'enduit." 
-                list={<ul>
-                     <li>Inscription toute l’année</li>
-                     <li>Formations qualifiante /+ou - 9 mois / Lundi - Jeudi</li>
-                     <li>Stage en entreprise / 4 semaines / Lundi - Vendredi</li>
-                     <li>Objectif: mise à l’emploi</li>
-                     <li>Contrat BF: 2€/heure, etc.</li>
-                    </ul> }  >
-                     </Card>
+                manuelles et mécaniques,le plafonneur sera capable de réaliser, réparer et décorer et maîtrisera les techniques de mortier, cimentage et d'enduit."
+                list={ <ul>
+                    {text.map(el => <li key={el.id}>{el.text}</li>)}
+                </ul>} >
+                </Card>
                 <Card direction='right' img={plafonnage} title="Maçonnerie" desc="  Outre la maçonnerie, le stagiaire pourra réaliser des travaux di'solation
                         et d'étanchéité, des coffrages et ferraillages, du bétonnage,
                         jointoiement et égouttage."
-                        list={<ul>
-                            <li> Inscription toute l’année</li>
-                             <li>Formations qualifiante /+ou - 9 mois / Lundi - Jeudi</li>
-                             <li>Stage en entreprise / 4 semaines / Lundi - Vendredi</li>
-                             <li>Objectif: mise à l’emploi</li>
-                             <li>Contrat BF: 2€/heure, etc.</li>
-                            </ul> } > 
-                            </Card>
+                    list={<ul>
+                        {text.map(el => <li key={el.id}>{el.text}</li>)}
+                    </ul>} >
+                </Card>
             </div>
 
 

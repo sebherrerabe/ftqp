@@ -51,10 +51,11 @@
   width: calc(100% - 20px);
   justify-content: space-around;
   align-items: center;
+  padding: 25px;
 }
 
 .card-desc{
   
-  text-align: center;
+  text-align:left;
 }
 
