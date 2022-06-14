@@ -11,28 +11,7 @@ const Card = ({ children, img, direction, title, desc , list }) => {
 
 
 
-    const text = [
-        {
-            id:1,
-            text:"Inscription toute l année",
-        },
-        {
-            id:2,
-            text:"Formations qualifiante /+ou - 9 mois / Lundi - Jeudi",
-        },
-        {
-            id:3,
-            text:"Stage en entreprise / 4 semaines / Lundi - Vendred",
-        },
-        {
-            id:4,
-            text:"Objectif: mise à l emploi",
-        },
-        {
-            id:5,
-            text:"Contrat BF: 2€/heure, etc.",
-        }
-    ]
+    
 
 
 
@@ -66,7 +45,7 @@ const Card = ({ children, img, direction, title, desc , list }) => {
 
 
     return (
-        <div className={"courses-card-container " + cardClass}>
+        <div className={"courses-card-container mg-top-30 " + cardClass}>
             <div className={"card-course " + cardClass}>
                 <div className={"card-photo " + cardClass} style={{ backgroundImage: `url(${img})` }}>
                     <div className={"card-box " + cardClass}>

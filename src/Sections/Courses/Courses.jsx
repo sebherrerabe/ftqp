@@ -1,6 +1,7 @@
 import Title from "../Components/Title/Title";
 import Card from "./Components/Card/Card";
 
+
 import "./Courses.css";
 import { faPersonDigging } from "@fortawesome/free-solid-svg-icons";
 import plafonnage from './assets/plafonnage.jpg';
@@ -31,16 +32,16 @@ const Courses = () => {
     return (
         <div className="main-container" id="nos-formations">
             <div className="courses-container">
-                <Title title="Nos Formations" icon={faPersonDigging} direction="right" />
+                <Title title="Nos Formations" icon={faPersonDigging} direction="right"  />
                 <div className="section-desc mg-top-40">
-                    <p className="desc">
+                    <p className="desc mg-top-30">
                         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia
                         fuga accusamus sed saepe. Sint tempora incidunt, ducimus inventore
                         officiis vitae temporibus. Libero distinctio unde facere aperiam? Sunt
                         nihil deleniti vel.
                     </p>
                     <h3 className="mg-top-40">Nos conditions :</h3>
-                    <ul className="mg-top-20">
+                    <ul className="mg-top-30">
                         <li> Avoir plus de 18 ans. </li>
                         <li> Etre détenteur d'un CEB ou d'un CESI ou le niveau équivalent. </li>
                         <li> Etre inscrit comme demandeur d'emploi et titulaire du document A15. </li>
