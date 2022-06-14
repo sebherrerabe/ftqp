@@ -1,6 +1,6 @@
 .card-course {
   height: 500px;
-  width: calc(100% - 200px);
+  width: calc(100% - 250px);
   display: flex;
 }
 .card-course.left {

@@ -1,11 +1,10 @@
-import { render } from '@testing-library/react';
 import { useState } from 'react';
 
 
 
 import './Card.css';
 
-const Card = ({ children, img, direction, title, desc , list }) => {
+const Card = ({ img, direction, title, desc, list }) => {
 
     const [cardClass] = useState(direction === 'left' ? 'left' : 'right');
 
@@ -26,7 +25,7 @@ const Card = ({ children, img, direction, title, desc , list }) => {
     //     ]
 
     //     render(
-            
+
     //         mylists.map(mylist , index =>{
     //             <ul>
     //                 <li></li>
@@ -35,13 +34,13 @@ const Card = ({ children, img, direction, title, desc , list }) => {
 
     // }
 
-  
-
-     
-    
 
 
-  
+
+
+
+
+
 
 
     return (
@@ -52,7 +51,7 @@ const Card = ({ children, img, direction, title, desc , list }) => {
                         <div className="inner-card-box">
                             <h3 className='card-title'>{title}</h3>
                             <p className="card-desc">{desc}</p>
-                            {list} 
+                            {list}
                         </div>
                     </div>
                 </div>

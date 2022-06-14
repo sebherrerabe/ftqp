@@ -49,15 +49,19 @@ const Courses = () => {
                 </div>
                 <Card direction='left' img={plafonnage} title="Plafonnage" desc=" Avec des techniques 
                 manuelles et mécaniques,le plafonneur sera capable de réaliser, réparer et décorer et maîtrisera les techniques de mortier, cimentage et d'enduit."
+
                 list={ <ul>
                     {text.map(el => <li key={el.id}>{el.text}</li>)}
                 </ul>} >
+
                 </Card>
                 <Card direction='right' img={plafonnage} title="Maçonnerie" desc="  Outre la maçonnerie, le stagiaire pourra réaliser des travaux di'solation
                         et d'étanchéité, des coffrages et ferraillages, du bétonnage,
                         jointoiement et égouttage."
                     list={<ul>
+
                         {text.map(el => <li key={el.id}>{el.text}</li>)}
+
                     </ul>} >
                 </Card>
             </div>
