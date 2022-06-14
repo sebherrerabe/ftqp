@@ -1,15 +1,36 @@
-import { useState } from "react";
 
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faInstagramSquare, faFacebookSquare, faLinkedin } from '@fortawesome/free-brands-svg-icons';
+import { faSquareEnvelope } from '@fortawesome/free-solid-svg-icons';
 import img from '../../../assets/1.png';
 
-const Card = () => {
-    const [hover, setHover] = useState(false);
+const Card = ({ name, position, socialmedia }) => {
 
-    return (<div class='item' onMouseEnter={() => setHover(true)} onMouseLeave={() => setHover(false)} style={{ backgroundImage: `url(${img})` }}>
+
+    const capitalise = (str) => {
+        if (str) {
+            return str.charAt(0).toUpperCase() + str.slice(1);
+        } else {
+            return '';
+        }
+    }
+
+    return (<div className='item' style={{ backgroundImage: `url(${img})` }}>
         <div className="top" >
-            <div className={`left-bar ${hover ? 'visible' : 'hidden'}`}></div>
+            <div className="left-bar">
+                <a href={socialmedia !== undefined ? socialmedia.instagram : ""}>
+                    <FontAwesomeIcon icon={faInstagramSquare} /></a>
+                <a href={socialmedia !== undefined ? socialmedia.facebook : ""}>
+                    <FontAwesomeIcon icon={faFacebookSquare} /></a>
+                <a href={socialmedia !== undefined ? socialmedia.linkedin : ""}>
+                    <FontAwesomeIcon icon={faLinkedin} /></a>
+                <a href={socialmedia !== undefined ? socialmedia.email : ""}>
+                    <FontAwesomeIcon icon={faSquareEnvelope} /></a>
+            </div>
         </div>
-        <div className="bottom" style={{ backgroundColor: hover ? '#ca3f11' : '#222A35' }} >
+        <div className="bottom">
+            <h4>{capitalise(name)}</h4>
+            <p>{capitalise(position)}</p>
         </div>
     </div>);
 }

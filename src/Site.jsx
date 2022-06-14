@@ -1,5 +1,3 @@
-
-
 import Header from './Sections/Header/Header'
 import Team from './Sections/Team/Team'
 import Courses from './Sections/Courses/Courses'
@@ -9,11 +7,16 @@ import Sponsors from './Sections/Sponsors/Sponsors'
 import Footer from './Sections/Footer/Footer'
 
 
-import './assets/bootstrap/bootstrap.min.css';
 import './Site.css';
 
 
+
+
 const Site = () => {
+
+
+
+
   return (
     <>
       <Header />

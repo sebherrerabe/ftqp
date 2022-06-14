@@ -6,7 +6,7 @@
 .inner-container {
   height: 100%;
   background-color: red;
-  margin: auto 200px;
+  margin: auto 250px;
   display: flex;
   align-items: center;
   flex-direction: column;
