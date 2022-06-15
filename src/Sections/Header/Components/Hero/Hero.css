@@ -5,7 +5,8 @@
 }
 .inner-container {
   height: 100%;
-  margin: auto 200px;
+  background-color: red;
+  margin: auto 250px;
   display: flex;
   align-items: center;
   flex-direction: column;

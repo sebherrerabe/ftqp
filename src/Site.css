@@ -10,32 +10,15 @@ body {
   font-family: "Raleway", "Roboto", sans-serif;
   color: black;
 }
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: "Raleway", "Roboto", sans-serif;
-  font-weight: 700;
-  margin: 0;
-}
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: "Raleway", sans-serif;
-  margin: 0;
-  letter-spacing: initial;
-  text-transform: capitalize;
-}
 p {
   font-family: "Raleway", sans-serif;
   margin: 0;
   letter-spacing: initial;
+}
+
+
+.section-desc {
+  margin: auto 250px;
 }
 
 .mg-top-10 {
@@ -52,15 +35,4 @@ p {
 }
 .mg-top-50 {
   margin-top: 50px;
-}
-.card {
-  position: initial;
-  display: flex;
-  flex-direction: initial;
-  min-width: initial;
-  word-wrap: initial;
-  background-color: initial;
-  background-clip: initial;
-  border: none;
-  border-radius: initial;
 }

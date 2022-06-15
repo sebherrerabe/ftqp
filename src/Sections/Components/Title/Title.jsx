@@ -3,9 +3,9 @@ import { useState } from 'react';
 import './Title.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
-const Title = ({ who, title, icon }) => {
-    const [titleClass] = useState(who === 'left' ? 'left' : 'right');
-    const [innerTitleClass] = useState(who === 'left' ? 'left' : 'right');
+const Title = ({ direction, title, icon }) => {
+    const [titleClass] = useState(direction === 'left' ? 'left' : 'right');
+    const [innerTitleClass] = useState(direction === 'left' ? 'left' : 'right');
 
     return (<div className={"title " + titleClass}>
         <div className={"inner-title " + innerTitleClass}>

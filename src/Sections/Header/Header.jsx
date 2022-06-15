@@ -13,7 +13,6 @@ const Header = () => {
         <video width="400" className="bg-video" autoPlay muted loop>
             <source src="SansTitre.mp4" type="video/mp4"></source>
         </video>
-
         <NavBar />
         <Hero />
     </header>);

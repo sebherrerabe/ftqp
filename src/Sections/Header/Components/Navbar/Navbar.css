@@ -1,0 +1,90 @@
+.navbar {
+  position: fixed;
+  z-index: 200;
+  height: 120px;
+  width: 100%;
+  transition: all 0.5s ease-in-out;
+}
+
+.shrink {
+  height: 80px;
+  background-color: #222a35;
+  border-bottom: 1px solid #ca3f11;
+}
+.shrink .inner-navbar-left img {
+  height: 50px;
+  width: 120px;
+}
+.inner-navbar {
+  margin: 0 250px;
+  height: 100%;
+  display: flex;
+}
+.inner-navbar-left {
+  height: 100%;
+  width: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.inner-navbar-left img {
+  height: 80px;
+  width: 200px;
+  transition: height 0.5s ease-in-out, width 0.5s ease-in-out;
+}
+.inner-navbar-right {
+  height: 100%;
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.inner-navbar-right ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: calc(100% - 40px);
+  width: 90%;
+  padding: 0;
+}
+.inner-navbar-right ul li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.inner-navbar-right ul li a {
+  text-decoration: none;
+  color: white;
+  display: flex;
+  align-items: flex-end;
+  transition: color 0.5s ease-in-out;
+}
+.inner-navbar-right ul li a:hover {
+  color: #ca3f11;
+}
+.inner-navbar-right ul li a:hover + .bar {
+  width: 40px;
+}
+.inner-navbar-right ul li a svg {
+  margin-right: 5px;
+  height: 25px;
+  width: 25px;
+}
+.bar {
+  margin-top: 10px;
+  width: 0px;
+  transition: width 0.5s ease-in-out;
+  height: 2px;
+  background-color: red;
+  border-radius: 20px;
+}
+
+.inner-navbar-right ul .active a {
+  color: #ca3f11;
+}
+
+.active .bar {
+  width: 40px;
+}
