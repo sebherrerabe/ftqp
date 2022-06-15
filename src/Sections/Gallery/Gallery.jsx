@@ -5,10 +5,10 @@ import { faImage } from '@fortawesome/free-solid-svg-icons';
 import './Gallery.css';
 
 const Gallery = () => {
-    return (<div className="main-container">
-        <Title title="Galery"  direction="left" icon={faImage}></Title>
+    return (<section className="main-container" id='galerie'>
+        <Title title="Galerie"  direction="left" icon={faImage}></Title>
 
-    </div>);
+    </section>);
 }
 
 export default Gallery;

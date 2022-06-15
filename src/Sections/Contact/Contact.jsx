@@ -5,13 +5,13 @@ import './Contact.css';
 import { faAddressCard } from "@fortawesome/free-solid-svg-icons";
 
 const Contact = () => {
-    return (<div className="main-container">
+    return (<section className="main-container" id="contact">
                 <Title title="Contact" icon={faAddressCard}></Title>
                 <ContactCard />
             
                
 
-    </div>);
+    </section>);
 }
 
 export default Contact;
