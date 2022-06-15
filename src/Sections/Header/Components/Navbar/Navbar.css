@@ -12,7 +12,7 @@
   border-bottom: 1px solid #ca3f11;
 }
 .shrink .inner-navbar-left img {
-  height: 50px;
+  height: 52px;
   width: 120px;
 }
 .inner-navbar {
@@ -28,7 +28,7 @@
   align-items: center;
 }
 .inner-navbar-left img {
-  height: 80px;
+  height: 87px;
   width: 200px;
   transition: height 0.5s ease-in-out, width 0.5s ease-in-out;
 }
