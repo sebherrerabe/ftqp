@@ -1,8 +1,14 @@
 
-import './Sponsors.css';
+
+import SponsorsCard from './components/SponsorsCard';
+
 
 const Sponsors = () => {
-    return (<div className="main-container">
+    return (<div className="main-container section-desc">
+        <SponsorsCard />
+        
+        
+        
 
     </div>);
 }
