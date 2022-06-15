@@ -2,9 +2,9 @@
 import './Footer.css';
 
 const Footer = () => {
-    return (<div className="main-container">
+    return (<footer className="main-container">
 
-    </div>);
+    </footer>);
 }
 
 export default Footer;

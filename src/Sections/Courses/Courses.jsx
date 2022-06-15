@@ -30,7 +30,7 @@ const Courses = () => {
         }
     ]
     return (
-        <div className="main-container" id="nos-formations">
+        <section className="section main-container" id="nos-formations">
             <div className="courses-container">
                 <Title title="Nos Formations" icon={faPersonDigging} direction="right"  />
                 <div className="section-desc mg-top-40">
@@ -112,7 +112,7 @@ const Courses = () => {
                 </div>
                 <div className="pic1"></div>
             </div> */}
-        </div>
+        </section>
     );
 };
 

@@ -9,7 +9,7 @@ import { faPeopleGroup } from '@fortawesome/free-solid-svg-icons';
 const Team = () => {
 
 
-    return (<section className="main-container" id='notre-equipe' >
+    return (<section className="section main-container" id='notre-equipe' >
         <div className="team-container">
             <Title direction="left" title="Notre Equipe" icon={faPeopleGroup} />
             <div className="section-desc mg-top-40">

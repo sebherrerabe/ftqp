@@ -10,7 +10,11 @@ import bgvideo from './assets/bgvideo.mp4';
 import './Header.css'
 
 const Header = () => {
-    return (<header className="main-container" id='accueil' >
+
+
+    
+
+    return (<header  className="section main-container" id='accueil' >
         <video className="bg-video" autoPlay loop muted>
             <source src={bgvideo} type="video/mp4"></source>
         </video>

@@ -13,23 +13,44 @@ import { faHouseChimney, faPeopleGroup, faPersonDigging, faImages, faAddressCard
 const NavBar = () => {
 
 
-    const [links, setLinks] = useState([{ text: "accueil", icon: faHouseChimney, active: true, id: "#accueil" },
+    const [sections, setSections] = useState([{ text: "accueil", icon: faHouseChimney, active: true, id: "#accueil" },
     { text: "notre equipe", icon: faPeopleGroup, active: false, id: "#notre-equipe" },
     { text: "nos formations", icon: faPersonDigging, active: false, id: "#nos-formations" },
     { text: "galerie", icon: faImages, active: false, id: "#galerie" },
     { text: "contact", icon: faAddressCard, active: false, id: "#contact" }]);
 
 
-
     const [navClass, setNavClass] = useState(false)
     const navRef = useRef(null)
     navRef.current = navClass
+
+    const switchActiveByScroll = () => {
+        const scroll = window.scrollY
+        const sections = document.querySelectorAll('.section')
+        sections.forEach((section, index) => {
+            if (scroll > section.offsetTop - 100) {
+                setSections(prevSections => {
+                    const newSections = prevSections.map((section, i) => {
+                        if (i === index) {
+                            return { ...section, active: true }
+                        } else {
+                            return { ...section, active: false }
+                        }
+                    })
+                    return newSections
+                })
+            }
+        }
+        )
+    }
+
     useEffect(() => {
         const handleScroll = () => {
             const show = window.scrollY > 50
             if (navRef.current !== show) {
                 setNavClass(show)
             }
+            switchActiveByScroll()
         }
         document.addEventListener('scroll', handleScroll)
         return () => {
@@ -37,17 +58,7 @@ const NavBar = () => {
         }
     }, [])
 
-    const handleClick = (e, index, id) => {
-        setLinks(links.map((link, i) => {
-            if (i === index) {
-                return { ...link, active: true }
-            } else {
-                return { ...link, active: false }
-            }
-        }
-        ))
 
-    }
 
     return (
         <nav className={`navbar ${navClass ? 'shrink' : null}`} ref={navRef} >
@@ -59,8 +70,8 @@ const NavBar = () => {
                 </div>
                 <div className="inner-navbar-right">
                     <ul>
-                        {links.map((link, index) => {
-                            return <Link key={index} index={index} text={link.text} icon={link.icon} active={link.active} id={link.id} handleClick={handleClick} />
+                        {sections.map((section, index) => {
+                            return <Link key={index} index={index} text={section.text} icon={section.icon} active={section.active} id={section.id} />
                         })}
 
 
