@@ -1,39 +1,44 @@
-.container-left-right{
+.side{
     background-color: #D9D9D9;
     height: 250px;
     width: 250px;
-    
 }
 
-.container-middle{
+.middle-container{
     background-color:white;
     height: 80vh;
-    width: 100%;
+    width: calc(100% - 500px);
     display: flex;
+    justify-content: flex-end;
 }
 
 
 
-.div-container{
+.contactcard-container{
     display: flex;
     align-items:center;
 }
 
-.content-container-middle{
+.contactcard{
     background-color: #222A35;
     width: 60%;
     height: 100%;
-    border-radius: 20px;
+    border-radius: 20px 0 0 20px;
     z-index: 1;
 }
-
+.contactcard-right {
+    height: 100%;
+    width: 6%;
+    background-color: #222A35;
+    border-radius: 0 20px 20px 0;
+}
 .picture{
     height: 100%;
     width: 40%;
     background-image: url("../assets/1.jpg");
     background-size: cover;
-    transform: translate(-20px);
-    z-index: 0;
+    
+    border-radius: 0 20px 20px 0;
 }
 
 

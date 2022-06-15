@@ -5,19 +5,24 @@ import './ContactCard.css';
 
 
 
-const ContactCard = ({ children, img, content,  }) =>{
+const ContactCard = ({ children, img, content, }) => {
 
 
 
-    return(
-        <div className="div-container">
-        <div className="container-left-right"></div>
-        <div className="container-middle">
-            <div className="content-container-middle"></div>
-            <div className="picture"></div>
+    return (
+        <div className="contactcard-container">
+            <div className="side"></div>
+            <div className="middle-container">
+                
+            <div className="contactcard"></div>
+                <div className="picture">
+                    <div className="contactcard-right">
+
+                    </div>
+                </div>
+            </div>
+            <div className="side"></div>
         </div>
-        <div className="container-left-right"></div>
-    </div>
     )
 }
 
