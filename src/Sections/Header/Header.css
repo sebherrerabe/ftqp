@@ -1,0 +1,11 @@
+#accueil {
+    position: relative;
+}
+
+.bg-video {
+    position: absolute;
+    transition: 1s all;
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+  }
