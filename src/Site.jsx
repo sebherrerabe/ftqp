@@ -23,8 +23,9 @@ const Site = () => {
       <Team />
       <Courses />
       <Gallery />
-      <Sponsors />
+      
       <Contact />
+      <Sponsors />
       <Footer />
     </>
   );
