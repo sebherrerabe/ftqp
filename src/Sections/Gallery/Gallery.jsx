@@ -5,7 +5,7 @@ import { faImage } from '@fortawesome/free-solid-svg-icons';
 import './Gallery.css';
 
 const Gallery = () => {
-    return (<section className="main-container" id='galerie'>
+    return (<section className="section main-container" id='galerie'>
         <Title title="Galerie"  direction="left" icon={faImage}></Title>
 
     </section>);

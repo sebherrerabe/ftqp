@@ -1,3 +1,5 @@
+
+
 import Header from './Sections/Header/Header'
 import Team from './Sections/Team/Team'
 import Courses from './Sections/Courses/Courses'
@@ -14,19 +16,15 @@ import './Site.css';
 
 const Site = () => {
 
-
-
-
   return (
     <>
-      <Header />
-      <Team />
-      <Courses />
-      <Gallery />
-      
-      <Contact />
-      <Sponsors />
-      <Footer />
+      <Header  />
+      <Team  />
+      <Courses  />
+      <Gallery  />
+      <Contact  />
+      <Sponsors  />
+      <Footer  />
     </>
   );
 }
