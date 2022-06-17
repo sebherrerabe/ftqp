@@ -12,13 +12,13 @@ const ContactCard = ({ children, img, content }) => {
   }, []);
 
   return (
-    <div className="contactcard-container">
+    <div className="contactcard-container mg-top-50" >
       <div className="side"></div>
       <div className="middle-container" ref={newRef}>
         <div className="contactcard">
           <div className="contact-card-top">
             <div className="title-bar">
-              <h5 className="question">Question?</h5>
+              <h5 className="question">Questions?</h5>
             </div>
           </div>
           <form>
