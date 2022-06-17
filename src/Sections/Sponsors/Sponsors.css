@@ -1,0 +1,8 @@
+.icon-container{
+    display: grid;
+    justify-content: space-between;
+    grid-template-columns: 0fr 0fr 0fr 0fr;
+    margin: 205px 250px 50px 250px;
+    height: 50vh;
+    grid-row-gap: 10%;
+}

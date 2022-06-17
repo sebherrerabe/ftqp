@@ -8,7 +8,7 @@ import './SponsorCard.css';
 const SponsorCard = () =>{
 
     return(
-        <div className='sponsor-logo'></div>
+        <div className='hi'></div>
     )
 }
 

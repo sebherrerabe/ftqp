@@ -1,6 +1,7 @@
 
 import { useState } from 'react';
 import SponsorCard from './Components/SponsorCard';
+import './Sponsors.css';
 
 
 const Sponsors = () => {
@@ -8,10 +9,12 @@ const Sponsors = () => {
 
     console.log(images)
     return (<section className="section main-container">
-        <div className="sponsors-container">
-
+        
+        <div className='icon-container'>
         {images.map(img => <SponsorCard key={img.id} />)}
         </div>
+        
+        
     </section>);
 }
 
