@@ -22,14 +22,8 @@
 .item h4 {
   font-size: 1.3em;
 }
-.item h4:hover {
-  color: black;
-}
 .item p {
   font-size: 0.8em;
-}
-.item p:hover {
-  color: black;
 }
 .item .top {
   height: 80%;
@@ -50,7 +44,7 @@
   font-size: 1.5em;
 }
 .item .top .left-bar svg:hover {
-  color: black;
+  color: #212e41;
 }
 
 .item:hover > .top .left-bar {
@@ -106,6 +100,6 @@
 }
 .owl-theme .owl-nav [class*="owl-"]:hover {
   background: none;
-  color: black;
+  color: #222a35;
   text-decoration: none;
 }
