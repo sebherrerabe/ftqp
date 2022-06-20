@@ -4,7 +4,6 @@ import Title from "../Components/Title/Title";
 import "./Courses.css";
 import { faPersonDigging } from "@fortawesome/free-solid-svg-icons";
 import plafonnage from './assets/plafonnage.jpg';
-import bg from './assets/bg.jpg';
 
 const Row = ({ left, right }) => {
     return <div className="courses-row mg-top-40">
@@ -69,14 +68,12 @@ const Courses = () => {
 
     return (
         <section className="section main-container" id="nos-formations">
-            <div className="bg-photo" style={{ backgroundImage: `url(${bg})` }}>
-                <div className="courses-container">
-                    <Title title="Nos Formations" icon={faPersonDigging} direction="right" />
-                    <div className="section-desc mg-top-40">
-                        <Desc />
-                        <Plafonnage />
-                        <Maconerie />
-                    </div>
+            <div className="courses-container">
+                <Title title="Nos Formations" icon={faPersonDigging} direction="right" />
+                <div className="section-desc mg-top-40">
+                    <Desc />
+                    <Plafonnage />
+                    <Maconerie />
                 </div>
             </div>
         </section>
