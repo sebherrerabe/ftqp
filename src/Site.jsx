@@ -10,6 +10,7 @@ import Footer from './Sections/Footer/Footer'
 
 
 import './Site.css';
+import bg from './assets/bg.jpg'
 
 
 
@@ -18,13 +19,14 @@ const Site = () => {
 
   return (
     <>
-      <Header  />
-      <Team  />
-      <Courses  />
-      <Gallery  />
-      <Contact  />
-      <Sponsors  />
-      <Footer  />
+      <div className="bg-photo" style={{ backgroundImage: `url(${bg})` }}></div>
+      <Header />
+      <Team />
+      <Courses />
+      <Gallery />
+      <Contact />
+      <Sponsors />
+      <Footer />
     </>
   );
 }

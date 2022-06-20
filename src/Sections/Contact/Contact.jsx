@@ -6,11 +6,11 @@ import { faAddressCard } from "@fortawesome/free-solid-svg-icons";
 
 const Contact = () => {
     return (<section className="section main-container" id="contact">
-        <Title title="Contact" icon={faAddressCard}></Title>
+        <div className="contact-top">
+            <Title direction="right" title="Contact" icon={faAddressCard} />
+        </div>
         <ContactCard />
-
-
-
+        <div className="contact-bottom"></div>
     </section>);
 }
 

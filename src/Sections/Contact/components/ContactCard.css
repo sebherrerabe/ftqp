@@ -1,7 +1,19 @@
 .side {
-  background-color: #d9d9d9;
-  height: 250px;
+  height: 100%;
   width: 250px;
+  display: flex;
+  flex-direction: column;
+}
+.side .shape {
+  height: 30%;
+  width: 100%;
+  background-color: white;
+}
+.side .rectangle {
+  
+  background: rgba(255, 255, 255, 0.959);
+  height: 40%;
+  width: 100%;
 }
 
 .middle-container {
@@ -47,7 +59,6 @@
   margin-top: 40px;
   display: flex;
   align-items: center;
-
 }
 .title-bar-right {
   width: 100%;
@@ -55,10 +66,10 @@
   background-color: #ca3f11;
   margin-top: 40px;
 }
-.question{
-    font-size: xx-large;
-    color: white;
-    padding-left: 20px;
+.question {
+  font-size: xx-large;
+  color: white;
+  padding-left: 20px;
 }
 
 .picture {
@@ -93,6 +104,9 @@ textarea {
   background-color: #d9d9d9;
   font-size: larger;
   font-family: Raleway;
+  border: none;
+  resize: none;
+  outline: none;
 }
 input {
   padding-left: 20px;
