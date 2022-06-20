@@ -5,10 +5,10 @@ import './SponsorCard.css';
 
 
 
-const SponsorCard = () =>{
+const SponsorCard = ({ img }) => {
 
-    return(
-        <div className='hi'></div>
+    return (
+        <div className='hi' style={{ backgroundImage: `url(${img})` }}></div>
     )
 }
 
