@@ -5,7 +5,13 @@
   background: rgba(255, 255, 255, 0.959);
   padding-bottom: 50px;
 }
-
+.courses-container h3.info {
+  color: #ca3f11;
+  font-size: 1.5em;
+}
+.courses-container p {
+  font-size: 1.2em;
+}
 .mg-left-20 {
   margin-left: 20px;
 }
@@ -17,4 +23,10 @@
   width: calc(100% - 60px);
   display: flex;
   flex-direction: column;
+}
+.card-inner p {
+  font-weight: 600;
+}
+.maconerie {
+  text-align: right;
 }

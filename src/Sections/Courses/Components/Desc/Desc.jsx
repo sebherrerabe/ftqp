@@ -14,7 +14,7 @@ const Desc = () => {
     } right={
         <InfoCard direction="left">
             <div className="card-inner desc">
-                <h3>Pour suivre une formation vous avez besoin de...</h3>
+                <h3 className="info">Pour suivre une formation vous avez besoin de...</h3>
                 <ul>
                     <li><div className="inner-li"><img src={age} alt="logo plus de 18 ans" /> Avoir plus de 18 ans.</div></li>
                     <li><div className="inner-li"><img src={certificate} alt="logo de certificat" /> Etre détenteur d'un CEB ou d'un CESI ou le niveau équivalent.</div>
