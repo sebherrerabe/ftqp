@@ -5,10 +5,10 @@ import './SponsorCard.css';
 
 
 
-const SponsorCard = () =>{
+const SponsorCard = ({ img, link }) => {
 
-    return(
-        <div className='hi'></div>
+    return (
+        <a href={link} target="_blank" rel="noopener noreferrer"> <div className='hi' style={{ backgroundImage: `url(${img})` }}></div></a>
     )
 }
 
