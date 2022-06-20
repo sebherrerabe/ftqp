@@ -1,0 +1,8 @@
+.footer-background {
+    background-color: #222A35;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    min-height: 80vh;
+}
