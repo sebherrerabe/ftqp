@@ -9,40 +9,6 @@ const Card = ({ img, direction, title, desc, list }) => {
     const [cardClass] = useState(direction === 'left' ? 'left' : 'right');
 
 
-
-    
-
-
-
-    // const  myloop = () =>{
-
-    //     const mylists = [
-    //       'mylist' :  "Inscription toute l’année",
-    //         "Formations qualifiante /+ou - 9 mois / Lundi - Jeudi",
-    //         "Stage en entreprise / 4 semaines / Lundi - Vendred",
-    //         "Objectif: mise à l’emploi",
-    //         "Contrat BF: 2€/heure, etc."
-    //     ]
-
-    //     render(
-
-    //         mylists.map(mylist , index =>{
-    //             <ul>
-    //                 <li></li>
-    //             </ul>
-    //         }))
-
-    // }
-
-
-
-
-
-
-
-
-
-
     return (
         <div className={"courses-card-container mg-top-30 " + cardClass}>
             <div className={"card-course " + cardClass}>

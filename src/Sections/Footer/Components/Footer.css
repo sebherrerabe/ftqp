@@ -1,0 +1,15 @@
+
+.footer-line {
+    height: 80px;
+    width: 100%;
+    background-color: #CA3F11;
+}
+
+.info-container{
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    margin: 40px 250px;
+
+
+}
