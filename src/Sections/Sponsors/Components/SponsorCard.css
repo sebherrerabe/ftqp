@@ -1,5 +1,6 @@
-.hi{
-    width: 235px;
-    height: 235px;
-    background-color:blue ;
+.hi {
+  width: 235px;
+  height: 235px;
+  background-color: blue;
+  box-shadow: 0px 2px 60px 5px rgba(0, 0, 0, 0.15);
 }
