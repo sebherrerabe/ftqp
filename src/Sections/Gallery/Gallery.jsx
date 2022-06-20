@@ -19,7 +19,9 @@ const Gallery = () => {
          
 
     return (<section className="section main-container" id='galerie'>
-        <Title title="Galerie"  direction="left" icon={faImage}></Title>
+        <div className="gallery-container bg-white">
+            <Title title="Galerie" direction="left" icon={faImage}></Title>
+        </div>
 
         <Carousel
   additionalTransfrom={0}

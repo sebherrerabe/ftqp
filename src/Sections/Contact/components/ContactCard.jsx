@@ -12,8 +12,12 @@ const ContactCard = ({ children, img, content }) => {
   }, []);
 
   return (
-    <div className="contactcard-container mg-top-50" >
-      <div className="side"></div>
+    <div className="contactcard-container" >
+      <div className="side">
+        <div className="shape"></div>
+        <div className="rectangle"></div>
+        <div className="shape"></div>
+      </div>
       <div className="middle-container" ref={newRef}>
         <div className="contactcard">
           <div className="contact-card-top">
@@ -60,7 +64,11 @@ const ContactCard = ({ children, img, content }) => {
           </div>
         </div>
       </div>
-      <div className="side"></div>
+      <div className="side">
+        <div className="shape"></div>
+        <div className="rectangle"></div>
+        <div className="shape"></div>
+      </div>
     </div>
   );
 };

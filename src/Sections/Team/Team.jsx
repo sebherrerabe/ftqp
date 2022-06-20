@@ -10,7 +10,7 @@ const Team = () => {
 
 
     return (<section className="section main-container" id='notre-equipe' >
-        <div className="team-container">
+        <div className="team-container bg-white">
             <Title direction="left" title="Notre Equipe" icon={faPeopleGroup} />
             <div className="section-desc mg-top-40">
                 <p className="desc">

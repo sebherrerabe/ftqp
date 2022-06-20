@@ -1,3 +1,12 @@
 #contact{
     height: 100vh;
 }
+.contact-top {
+    background-color: white;
+    padding-bottom: 50px;
+}
+.contact-bottom {
+    height: 50px;
+    width: 100%;
+    background-color: white;
+}
