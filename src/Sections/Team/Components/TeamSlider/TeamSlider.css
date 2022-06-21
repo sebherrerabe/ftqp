@@ -26,14 +26,14 @@
   font-size: 0.8em;
 }
 .item .top {
-  height: 80%;
+  height: 270px;
   width: 100%;
 }
 .item .top .left-bar {
   border-radius: 20px 20px 0 0;
   background-color: #ca3f11;
   height: 100%;
-  width: 30%;
+  width: 80px;
   transform: rotateY(90deg);
   opacity: 0;
   transition: opacity 0.4s ease-out, transform 0.4s ease-out;
@@ -57,22 +57,31 @@
 
 .item .bottom {
   border-radius: 0 0 20px 20px;
-  height: 20%;
+  height: 80px;
   width: 100%;
   background-color: #222a35;
   transition: background-color 0.4s ease-out;
   display: flex;
-  justify-content: center;
-  align-items: center;
   flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
-
+.item h4 {
+  margin: 0;
+}
 .owl-item.active.center .item {
   width: 350px;
   height: 500px;
 }
+.owl-item.active.center .item .top {
+  height: 390px;
+}
 .owl-item.active.center .item .top .left-bar {
+  width: 110px;
   font-size: 2.2em;
+}
+.owl-item.active.center .item .bottom {
+  height: 110px;
 }
 .owl-item.active.center .item h4 {
   font-size: 2em;

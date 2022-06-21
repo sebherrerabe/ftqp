@@ -1,5 +1,5 @@
 .side {
-  height: 100%;
+  height: 700px;
   width: 250px;
   display: flex;
   flex-direction: column;
@@ -10,7 +10,6 @@
   background-color: white;
 }
 .side .rectangle {
-  
   background: rgba(255, 255, 255, 0.959);
   height: 40%;
   width: 100%;
@@ -18,10 +17,11 @@
 
 .middle-container {
   background-color: white;
-  height: 100%;
+  height: 700px;
   width: calc(100% - 500px);
   display: flex;
   justify-content: flex-end;
+  font-size: 1.6em;
 }
 
 .contactcard-container {
@@ -34,6 +34,7 @@
   background-color: #222a35;
   /* width: 40%; */
   height: 100%;
+  width: 40%;
   border-radius: 20px 0 0 20px;
   display: flex;
   flex-direction: column;
@@ -67,7 +68,6 @@
   margin-top: 40px;
 }
 .question {
-  font-size: xx-large;
   color: white;
   padding-left: 20px;
 }
@@ -102,20 +102,18 @@ form textarea {
 input,
 textarea {
   background-color: #d9d9d9;
-  font-size: larger;
   font-family: Raleway;
   border: none;
   resize: none;
   outline: none;
+  font-size: 0.6em;
 }
 input {
   padding-left: 20px;
 }
 
 ::placeholder {
-  font-size: x-large;
   color: #222a35;
-  font-weight: bold;
 }
 
 .form-top-container {
@@ -146,6 +144,7 @@ input {
   border-radius: 20px;
   padding: 0;
   border-width: 0;
-  font-size: x-large;
   color: white;
+  font-size: 0.7em;
+  cursor: pointer;
 }
