@@ -14,9 +14,9 @@ const FooterTop = (icon,) => {
 
     return(
         <div className="info-container">
-            <div> <FontAwesomeIcon icon={faLocationDot}></FontAwesomeIcon>  Rue des Alliés 303, 1190 Forest</div>
-            <div><FontAwesomeIcon icon={ faEarthAfrica}></FontAwesomeIcon> info@example.com</div>
-            <div><FontAwesomeIcon icon={faPhone } ></FontAwesomeIcon> 02165421621</div>
+            <div className='info'> <div className='circle'><FontAwesomeIcon icon={faLocationDot}></FontAwesomeIcon> </div>  <span className='hovered'>Rue des Alliés 303, 1190 Forest</span> </div>
+            <div className='info'> <div className="circle"><FontAwesomeIcon icon={ faEarthAfrica}></FontAwesomeIcon></div> info@example.com</div>
+            <div className='info'> <div className="circle"><FontAwesomeIcon icon={faPhone } ></FontAwesomeIcon></div> 02165421621</div>
         </div>
     )
 }

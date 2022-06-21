@@ -18,16 +18,52 @@
 
 }
 
+.info{
+    display: flex;
+    align-items: center;
+}
+
+.circle{
+    border: 2px solid;
+    border-radius: 100%;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: inline-flex;
+    margin-right: 10px;
+}
+
+span:hover ~ .circle {
+    background-color: #CA3F11;
+    cursor: pointer;
+    
+}
+
 .footer-middle-container{
-    margin: 40px 250px;
+    margin: 40px 260px;
     display: flex;
 }
 
 .open{
     color: white;
-    margin-left: 20px;
+    margin-left: 150px;
     display: flex;
     flex-direction: column;
-    align-items: center;
     width: 50%;
+}
+.paragraph{
+    font-size: x-large;
+}
+
+.horaire{
+    font-size: xx-large;
+}
+
+.horaire-container{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
 }
