@@ -14,6 +14,7 @@ import './TeamSlider.css';
 const TeamSlider = () => {
 
     const [margin, setMargin] = useState(0);
+    const [width, setWidth] = useState(0);
 
     const addMargin = () => {
         const owl = document.querySelector('.owl-carousel');
@@ -23,8 +24,16 @@ const TeamSlider = () => {
     }
 
     useEffect(() => {
-        addMargin();
+        const resizeWindow = () => {
+            setWidth(window.innerWidth);
+        }
+        window.addEventListener('resize', resizeWindow);
     }, []);
+
+
+    useEffect(() => {
+        addMargin();
+    }, [width]);
 
     const settings = {
         loop: true,
