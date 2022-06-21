@@ -92,8 +92,11 @@ const Gallery = () => {
 
                 </Carousel>
             </div>
+
+    <div className="gallery-bottom"></div>
         </section>
     );
 }
+
 
 export default Gallery;
