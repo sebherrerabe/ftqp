@@ -15,10 +15,13 @@
    margin-top:20px;
     color:white;
     text-align:center;
-    
+    font-size: 1rem;
+    margin-bottom:15px;
+    height: 100px;
 }
 
 .invisible {
     color:white;
     display:none;
+    margin-bottom:15px;
 }
