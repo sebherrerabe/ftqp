@@ -14,11 +14,18 @@ const ContactCard = ({ children, img, content }) => {
   const [telephone, setTelephone] = useState('');
   const [sujet, setSujet] = useState('');
   const [message, setMessage] = useState('');    
-  const [emailSent, setEmailSent] = useState(false);
+  const [emailSent, setEmailSent] = useState();
+
+
+  // const isValidEmail = email => {
+  //   const regex = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+
+  //   return regex.test(String(email).toLowerCase());
+  // };
 
   const handleSubmit = (e) => {
     e.preventDefault()
-    console.log(name);
+    //console.log(name);
 
     if (name && email && telephone && sujet && message ) {
       
@@ -48,15 +55,11 @@ const ContactCard = ({ children, img, content }) => {
 
      } else {
         setEmailSent(false);   
-        const alert = "Veuillez remplir tous les champs"
+       
       }
   }
 
-   const isValidEmail = email => {
-    const regex = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-
-    return regex.test(String(email).toLowerCase());
-  };
+   
 
   useEffect(() => {
     console.log(newRef.current.clientHeight);
@@ -121,14 +124,13 @@ const ContactCard = ({ children, img, content }) => {
               <button className="btn-contact-page mg-top-40"> <FontAwesomeIcon icon={faPaperPlane} ></FontAwesomeIcon> Envoyer</button>
             </div>
 
-            {/* <span className={emailSent ? 'visible' : 'invisible'}>Merci pour votre message. <br/> Nous vous contacterons bientôt.</span> */}
-
-            <div className='visible'>
-              {emailSent ===true ? <div> Merci pour votre message. <br/> Nous vous contacterons bientôt.</div>
-               : <div> {alert}  please fill in </div>} 
+            <div className={emailSent ? 'visible' : 'invisible'}> Merci pour votre message. Nous vous contacterons bientôt.
             </div>
 
-          </form>
+            <div className={emailSent === false ? 'visible' : 'invisible'}> Veuillez remplir tous les champs.
+            </div>
+
+            </form>
 
         </div>
         <div className="picture">
