@@ -91,6 +91,9 @@
 .menu-burguer {
   display: none;
 }
+.inner-navbar-right ul li.x-mark {
+  display: none;
+}
 @media screen and (max-width: 769px) {
   .inner-navbar {
     margin: 0 100px;
@@ -120,9 +123,20 @@
     margin: 0;
     transition: transform 0.5s ease-in-out;
     border-bottom: 1px solid #ca3f11;
+    transform: translateY(-100%);
+  }
+  .inner-navbar-right ul.translated {
+    transform: translateY(0);
   }
   .inner-navbar-right ul li {
     width: 100%;
     height: 60px;
+  }
+  .inner-navbar-right ul li.x-mark {
+    display: flex;
+    font-size: 1.6em;
+    align-items: flex-end;
+    padding-right: 50px;
+    color: white;
   }
 }

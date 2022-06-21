@@ -60,10 +60,7 @@ const NavBar = () => {
         }
     }, [])
 
-    const [navbarTranslate, setNavbarTranslate] = useState("-100%")
-
-
-
+    const [navbarTranslate, setNavbarTranslate] = useState(false)
     return (
         <nav className={`navbar ${navClass ? 'shrink' : ''} `} ref={navRef} >
             <div className="inner-navbar">
@@ -75,14 +72,14 @@ const NavBar = () => {
 
                 <div className="inner-navbar-right">
                     <div className="menu-burguer">
-                        <FontAwesomeIcon icon={faBars} onClick={() => setNavbarTranslate("0")} />
+                        <FontAwesomeIcon icon={faBars} onClick={() => setNavbarTranslate(true)} />
                     </div>
-                    <ul style={{ transform: `translate(0, ${navbarTranslate})` }}>
+                    <ul className={navbarTranslate ? 'translated' : ''}>
                         {sections.map((section, index) => {
                             return <Link key={index} index={index} text={section.text} icon={section.icon} active={section.active} id={section.id} setNavbarTranslate={setNavbarTranslate} />
                         })}
-                        <li style={{ fontSize: "1.6em", alignItems: "flex-end", paddingRight: "50px", color: "white" }}>
-                            <FontAwesomeIcon icon={faXmark} onClick={() => setNavbarTranslate("-100%")} />
+                        <li className='x-mark'>
+                            <FontAwesomeIcon icon={faXmark} onClick={() => setNavbarTranslate(false)} />
                         </li>
                     </ul>
                 </div>
