@@ -12,11 +12,24 @@ import './Footer.css';
 const FooterTop = (icon,) => {
 
 
-    return(
+    return (
         <div className="info-container">
-            <div className='info'> <div className='circle'><FontAwesomeIcon icon={faLocationDot}></FontAwesomeIcon> </div>  <span className='hovered'>Rue des Alliés 303, 1190 Forest</span> </div>
-            <div className='info'> <div className="circle"><FontAwesomeIcon icon={ faEarthAfrica}></FontAwesomeIcon></div> info@example.com</div>
-            <div className='info'> <div className="circle"><FontAwesomeIcon icon={faPhone } ></FontAwesomeIcon></div> 02165421621</div>
+            <div className="icon-footer-container">
+                <div className='info'>  Rue des Alliés 303, 1190 Forest </div>
+                <div className='circle'><FontAwesomeIcon icon={faLocationDot}></FontAwesomeIcon> </div>
+
+            </div>
+            <div className="icon-footer-container">
+                <div className='info'> info@example.com</div>
+                <div className="circle"><FontAwesomeIcon icon={faEarthAfrica}></FontAwesomeIcon></div>
+
+            </div>
+            <div className="icon-footer-container">
+                <div className='info'>  02165421621</div>
+                <div className="circle"><FontAwesomeIcon icon={faPhone} ></FontAwesomeIcon></div>
+
+            </div>
+
         </div>
     )
 }
