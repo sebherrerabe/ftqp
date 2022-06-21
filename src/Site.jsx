@@ -1,5 +1,3 @@
-
-
 import Header from './Sections/Header/Header'
 import Team from './Sections/Team/Team'
 import Courses from './Sections/Courses/Courses'
