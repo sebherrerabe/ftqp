@@ -7,6 +7,18 @@
   grid-row-gap: 10%;
 }
 .sponsors {
-    
   background: rgba(255, 255, 255, 0.959);
+}
+
+@media (max-width: 769px) {
+  .hi {
+    display: none;
+  }
+  .map {
+    display: none;
+  }
+  .task {
+    display: none;
+  }
+  
 }

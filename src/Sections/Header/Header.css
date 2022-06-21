@@ -17,3 +17,12 @@
     height: 100%;
     width: 100%;
 }
+
+@media screen and (max-width: 769px) {
+    #accueil {
+        overflow: hidden;
+    }
+    .bg-video {
+        width: min-content;
+    }
+}

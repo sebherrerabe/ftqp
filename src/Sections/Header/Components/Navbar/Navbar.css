@@ -88,3 +88,41 @@
 .active .bar {
   width: 40px;
 }
+.menu-burguer {
+  display: none;
+}
+@media screen and (max-width: 769px) {
+  .inner-navbar {
+    margin: 0 100px;
+  }
+  .inner-navbar-left img {
+    height: 52px;
+    width: 120px;
+  }
+  .inner-navbar-right {
+    justify-content: flex-end;
+  }
+  .menu-burguer {
+    display: flex;
+    color: white;
+    font-size: 2em;
+  }
+  .inner-navbar-right ul {
+    padding-top: 50px;
+    flex-direction: column;
+    background-color: #222a35;
+    position: fixed;
+    width: 100vw;
+    height: 400px;
+    left: 0;
+    top: 0;
+    z-index: 10000;
+    margin: 0;
+    transition: transform 0.5s ease-in-out;
+    border-bottom: 1px solid #ca3f11;
+  }
+  .inner-navbar-right ul li {
+    width: 100%;
+    height: 60px;
+  }
+}
