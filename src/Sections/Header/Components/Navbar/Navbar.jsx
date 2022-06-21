@@ -7,7 +7,8 @@ import Link from './Components/Link/Link';
 import './Navbar.css'
 import logo from './assets/logo ftqp.png'
 
-import { faHouseChimney, faPeopleGroup, faPersonDigging, faImages, faAddressCard } from '@fortawesome/free-solid-svg-icons';
+import { faHouseChimney, faPeopleGroup, faPersonDigging, faImages, faAddressCard, faBars, faXmark } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 
 const NavBar = () => {
@@ -18,6 +19,7 @@ const NavBar = () => {
     { text: "nos formations", icon: faPersonDigging, active: false, id: "#nos-formations" },
     { text: "galerie", icon: faImages, active: false, id: "#galerie" },
     { text: "contact", icon: faAddressCard, active: false, id: "#contact" }]);
+
 
 
     const [navClass, setNavClass] = useState(false)
@@ -58,23 +60,27 @@ const NavBar = () => {
         }
     }, [])
 
-
-
+    const [navbarTranslate, setNavbarTranslate] = useState(false)
     return (
-        <nav className={`navbar ${navClass ? 'shrink' : null}`} ref={navRef} >
+        <nav className={`navbar ${navClass ? 'shrink' : ''} `} ref={navRef} >
             <div className="inner-navbar">
                 <div className="inner-navbar-left">
                     <a href="/">
                         <img src={logo} alt="logo" />
                     </a>
                 </div>
+
                 <div className="inner-navbar-right">
-                    <ul>
+                    <div className="menu-burguer">
+                        <FontAwesomeIcon icon={faBars} onClick={() => setNavbarTranslate(true)} />
+                    </div>
+                    <ul className={navbarTranslate ? 'translated' : ''}>
                         {sections.map((section, index) => {
-                            return <Link key={index} index={index} text={section.text} icon={section.icon} active={section.active} id={section.id} />
+                            return <Link key={index} index={index} text={section.text} icon={section.icon} active={section.active} id={section.id} setNavbarTranslate={setNavbarTranslate} />
                         })}
-
-
+                        <li className='x-mark'>
+                            <FontAwesomeIcon icon={faXmark} onClick={() => setNavbarTranslate(false)} />
+                        </li>
                     </ul>
                 </div>
             </div>

@@ -13,7 +13,9 @@ const Hero = () => {
       <div className="inner-container">
         <div className="top-div">
           <h1>
-            <span>Lorem ipsum dolor sit amet consectetur</span> <span>inventore nesciunt.</span>
+            <span>Lorem ipsum dolor sit amet consectetur</span> 
+            <br />
+            <span>inventore nesciunt.</span>
           </h1>
         </div>
         <div className="bottom-div">
