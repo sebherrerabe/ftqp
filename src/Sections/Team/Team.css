@@ -1,4 +1,7 @@
 .team-container {
     min-height: 100vh;
-    padding-bottom: 50px;
+    padding-bottom: 100px;
+}
+.desc {
+    margin-bottom: 50px;
 }

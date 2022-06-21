@@ -59,7 +59,7 @@ const TeamSlider = () => {
         }
     }
 
-    return (<OwlCarousel className='owl-theme mg-top-50' {...settings} >
+    return (<OwlCarousel className='owl-theme' {...settings} >
         <Card name="Name" position="position" />
         <Card name="Name" position="position" />
         <Card name="Name" position="position" />

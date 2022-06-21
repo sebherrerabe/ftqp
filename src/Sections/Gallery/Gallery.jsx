@@ -26,7 +26,7 @@ const Gallery = () => {
     <div className="gallery-container bg-white">
 
         <Carousel
-            additionalTransfrom={0}
+            additionalTransfrom={70}
             arrows
             autoPlay
             autoPlaySpeed={4000}
