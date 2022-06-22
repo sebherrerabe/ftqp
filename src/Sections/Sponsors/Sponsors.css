@@ -4,14 +4,21 @@
 }
 
 @media (max-width: 769px) {
-  .hi {
-   
-  }
-  .map {
-    
-  }
+
   .task {
     display: none;
   }
+  .main-container.sponsors {
+    width: 100%;
+    min-height: 60vh;
+    display: flex;
+    flex-direction: column;
+  }
   
+  .footer-line{
+    height: 50px;
+  }
+  
+  
+
 }
