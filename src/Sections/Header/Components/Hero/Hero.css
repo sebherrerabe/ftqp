@@ -6,7 +6,7 @@
 }
 .inner-container {
   height: 100%;
-  margin: auto 250px;
+  margin: auto 12%;
   display: flex;
   align-items: center;
   flex-direction: column;

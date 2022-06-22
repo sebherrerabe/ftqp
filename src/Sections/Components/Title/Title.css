@@ -9,12 +9,12 @@
 
 .title.left {
   background-color: #222a35;
-  margin: 85px 250px 0 0;
+  margin: 85px 12% 0 0;
   border-radius: 0 20px 20px 0;
 }
 .title.right {
   background-color: #ca3f11;
-  margin: 85px 0 0 250px;
+  margin: 85px 0 0 12%;
   border-radius: 20px 0 0 20px;
 }
 .inner-title {
@@ -24,8 +24,8 @@
   justify-content: center;
 }
 .inner-title.left {
-  margin: auto 0 auto 250px;
+  margin: auto 0 auto 12%;
 }
 .inner-title.right {
-  margin: auto 250px auto 0;
+  margin: auto 12% auto 0;
 }
