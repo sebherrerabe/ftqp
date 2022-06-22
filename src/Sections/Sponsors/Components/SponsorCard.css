@@ -18,6 +18,11 @@
 
 @media only screen and (max-width: 769px) {
 
+
+  .footer-line{
+    height: 50px;
+  }
+
   .hi {
     width: 150px;
     height: 150px;
@@ -27,7 +32,7 @@
     display: grid;
     justify-content: space-between;
     grid-template-columns: 0fr 0fr 0fr 0fr;
-    margin: 50px 50px 50px 50px;
+    margin: 50px 8% 50px 8%;
     height: 50vh;
     gap: 1em;
   }
@@ -35,9 +40,38 @@
   .main-container{
     min-height: 60vh;
   }
-  .footer-line{
-    height: 50px;
-  }
+ 
 
 
 }
+
+
+@media only screen and (max-width: 600px) {
+
+ 
+  
+  .icon-container{
+    display: grid;
+    justify-content: space-around;
+    grid-template-columns:0fr 0fr;
+    margin: 50px 8% 50px 8%;
+    height: 70vh;
+    gap: 1em;
+  }
+
+}
+
+/* @media only screen and (max-width: 400px) {
+
+  .icon-container{
+    height: 75vh;
+    margin: 50px 5% 50px 5%;
+  }
+
+
+
+
+} */
+
+
+
