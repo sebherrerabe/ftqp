@@ -96,7 +96,7 @@
 }
 @media screen and (max-width: 769px) {
   .inner-navbar {
-    margin: 0 100px;
+    margin: 0 8%;
   }
   .inner-navbar-left img {
     height: 52px;

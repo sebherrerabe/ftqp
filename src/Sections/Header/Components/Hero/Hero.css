@@ -79,7 +79,7 @@ h1 span {
 
 @media (max-width: 769px) {
   .inner-container {
-    margin: auto 50px;
+    margin: auto 8%;
   }
   .top-div {
     height: 70%;
