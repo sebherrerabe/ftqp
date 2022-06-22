@@ -4,11 +4,13 @@
   display: flex;
   flex-direction: column;
 }
+
 .side .shape {
   height: 30%;
   width: 100%;
   background-color: white;
 }
+
 .side .rectangle {
   background: rgba(255, 255, 255, 0.959);
   height: 40%;
@@ -27,7 +29,7 @@
 .contactcard-container {
   display: flex;
   align-items: center;
-  height: 80%;  
+  height: 80%;
 }
 
 .contactcard {
@@ -40,6 +42,7 @@
   flex-direction: column;
   align-items: flex-end;
 }
+
 .contactcard-right {
   height: 100%;
   width: 40px;
@@ -52,6 +55,7 @@
   justify-content: flex-end;
   width: 100%;
 }
+
 .title-bar {
   width: calc(100% - 40px);
   height: 50px;
@@ -61,12 +65,14 @@
   display: flex;
   align-items: center;
 }
+
 .title-bar-right {
   width: 100%;
   height: 50px;
   background-color: #ca3f11;
   margin-top: 40px;
 }
+
 .question {
   color: white;
   padding-left: 20px;
@@ -92,6 +98,7 @@ form input {
   height: 50px;
   border-radius: 20px;
 }
+
 form textarea {
   height: 120px;
   width: calc(100% - 40px);
@@ -99,6 +106,7 @@ form textarea {
   padding: 20px;
   border-radius: 20px;
 }
+
 input,
 textarea {
   background-color: #d9d9d9;
@@ -108,6 +116,7 @@ textarea {
   outline: none;
   font-size: 0.6em;
 }
+
 input {
   padding-left: 20px;
 }
@@ -121,12 +130,14 @@ input {
   flex-direction: column;
   width: 100%;
 }
+
 .form-middle-container {
   display: flex;
   justify-content: space-between;
 
   width: 100%;
 }
+
 .form-middle-container input {
   width: calc(45% - 20px);
 }
@@ -147,4 +158,21 @@ input {
   color: white;
   font-size: 0.7em;
   cursor: pointer;
+}
+
+
+
+
+@media only screen and (max-width: 769px) {
+
+  .side {
+    width: 50px;
+  }
+
+  .middle-container {
+    width: calc(100% - 100px);
+  }
+  .contactcard{
+    width: 60%;
+  }
 }
