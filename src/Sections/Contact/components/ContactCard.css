@@ -160,7 +160,19 @@ input {
   cursor: pointer;
 }
 
+.visible-warning-message{
+    color:white;
+   text-align:center;
+   font-size: 0.7em;
+   /* margin-bottom:15px !important; */
+   /* height: 100px; */
+}
 
+.invisible-warning-message {
+   color:white;
+   display:none;
+   margin-bottom:15px;
+}
 
 
 @media only screen and (max-width: 769px) {
@@ -175,4 +187,28 @@ input {
   .contactcard{
     width: 60%;
   }
+
+   input,
+  textarea {
+    font-size: 0.7em;
+  }
+
+  .visible-warning-message{  
+  margin-top:5px !important;
+  
+  }
+
+  form textarea {
+    height: 100px;
+  }
+
+  .picture {
+    height: 100%;
+    width: 60%;
+    background-image: url("../assets/1.jpg");
+    background-size: cover;
+    background-position: left;
+    border-radius: 0 20px 20px 0;
+  }
+
 }

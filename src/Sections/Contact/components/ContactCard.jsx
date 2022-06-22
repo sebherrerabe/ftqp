@@ -124,10 +124,10 @@ const ContactCard = ({ children, img, content }) => {
               <button className="btn-contact-page mg-top-40"> <FontAwesomeIcon icon={faPaperPlane} ></FontAwesomeIcon> Envoyer</button>
             </div>
 
-            <div className={emailSent ? 'visible' : 'invisible'}> Merci pour votre message. Nous vous contacterons bientôt.
+            <div className={emailSent ? 'visible-warning-message' : 'invisible-warning-message'}> Merci pour votre message. Nous vous contacterons bientôt.
             </div>
 
-            <div className={emailSent === false ? 'visible' : 'invisible'}> Veuillez remplir tous les champs.
+            <div className={emailSent === false ? 'visible-warning-message' : 'invisible-warning-message'}> Veuillez remplir tous les champs.
             </div>
 
             </form>
