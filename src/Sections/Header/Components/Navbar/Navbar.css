@@ -146,9 +146,18 @@
   .inner-navbar {
     margin: 0 8%;
   }
-  
+
   .inner-navbar-left img {
     height: 52px;
     width: 120px;
+  }
+}
+
+@media screen and (max-width: 426px) {
+  .inner-navbar-left {
+    width: 40%;
+  }
+  .inner-navbar-right {
+    width: 60%;
   }
 }

@@ -1,10 +1,15 @@
 .team-container {
-    min-height: 100vh;
-    padding-bottom: 100px;
-   
+  min-height: 100vh;
+  padding-bottom: 100px;
 }
 .desc {
-    margin-top: 50px;
-    margin-bottom: 50px;
-    font-size: 1.2em;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  font-size: 1.2em;
+}
+
+@media only screen and (max-width: 426px) {
+  .team-container {
+    padding-bottom: 50px;
+  }
 }
