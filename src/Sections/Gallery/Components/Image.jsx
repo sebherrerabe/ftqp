@@ -1,10 +1,10 @@
-import React from 'react'
 import '../../Gallery/Gallery.css'
 
-function Image( {src, alt} ) {
+const Image = ({ src }) => {
+  console.log(src)
   return (
-<div className='img-gallery' style={{backgroundImage: `url(${src})`}} > 
-   </div>
+    <div className='img-gallery' style={{ backgroundImage: `url(${src})` }} >
+    </div>
   )
 }
 

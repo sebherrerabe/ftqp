@@ -93,31 +93,30 @@
   font-size: 1.2em;
 }
 
-.owl-nav {
+.team .owl-nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
   height: 0;
   margin: 0;
 }
-.owl-nav span {
+.team .owl-nav span {
   font-size: 5em;
   height: 100%;
 }
-.owl-prev {
+.team .owl-prev {
   transform: translate(-100px, calc(-250px));
 }
-.owl-next {
+.team .owl-next {
   transform: translate(100px, calc(-250px));
 }
-.owl-theme .owl-nav [class*="owl-"]:hover {
+.owl-theme.team .owl-nav [class*="owl-"]:hover {
   background: none;
   color: #222a35;
   text-decoration: none;
 }
 
 @media screen and (max-width: 769px) {
-
   .owl-stage {
     min-height: 300px;
   }
@@ -127,9 +126,7 @@
     height: 300px;
   }
 
-
   .desc {
     text-align: center;
   }
 }
-
