@@ -37,6 +37,15 @@
   border-radius: 20px;
 }
 
+.img-coursecard{
+  width: 90%;
+  height: 87%;
+  background-size: cover;
+  background-position: bottom ;
+  border-radius: 20px;
+}
+
+
 @media screen and (max-width: 769px) {
   .course-card {
     width: 100%;

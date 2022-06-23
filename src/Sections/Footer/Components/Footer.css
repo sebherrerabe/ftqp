@@ -12,7 +12,8 @@
   color: white;
   display: flex;
   justify-content: space-between;
-  margin: 40px 250px;
+  /* margin: 40px 250px; */
+  margin: 40px 12%; 
 }
 
 .icon-footer-container {
@@ -42,13 +43,14 @@
 }
 
 .footer-middle-container {
-  margin: 40px 260px;
+  /* margin: 40px 260px; */
+  margin:40px 12%;
   display: flex;
 }
 
 .open {
   color: white;
-  margin-left: 150px;
+  margin-left: 12%;
   display: flex;
   flex-direction: column;
   width: 50%;
@@ -73,13 +75,29 @@
   align-items: flex-start;
 }
 
+@media only screen and (max-width: 1024px) {
+  .footer-middle-container {
+   margin: 40px 12%; 
+    display: flex;
+    flex-direction: column;
+    align-items:center;   
+  }
+  
+  .open{
+    margin:0;
+    align-items: center;
+    
+  }
+  
+}
+
 @media only screen and (max-width: 769px) {
   .info-container {
-    margin: 40px 50px;
+    margin: 40px 12%;
   }
 
   .footer-middle-container {
-    margin: 40px 50px;
+    margin: 40px 12%;
     display: flex;
     flex-direction: column;
   }
