@@ -11,4 +11,4 @@ const Row = ({ newClass, left, right }) => {
     </div>
 }
 
-export default Row;
+export default Row;  

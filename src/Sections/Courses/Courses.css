@@ -23,10 +23,30 @@
   width: calc(100% - 60px);
   display: flex;
   flex-direction: column;
+  justify-content: center;
+
 }
 .card-inner p {
   font-weight: 600;
 }
 .maconerie {
   text-align: right;
+}
+
+@media screen and (max-width: 1024px) {
+  
+  .courses-container h3.info {
+    
+    font-size: 1.2em;
+  }
+  .courses-container p {
+    font-size: 1em;
+  }
+
+  .card-inner {
+    height: calc(100% - 60px);
+    width: calc(100% - 40px);
+    
+  }
+  
 }
