@@ -89,3 +89,15 @@
     margin: 0px 12%;
   }
 }
+
+@media screen and (max-width: 600px) {
+  
+  /* .course-card-top {
+    height: 15%;
+  }
+  
+  .img-coursecard {
+    height: 65%;
+    
+    } */
+} 
