@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from "react";
+import { useRef, useState } from "react";
 import "./ContactCard.css";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";

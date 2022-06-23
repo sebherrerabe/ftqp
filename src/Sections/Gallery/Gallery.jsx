@@ -1,11 +1,17 @@
 import { useState, useEffect } from 'react';
-import Carousel from 'react-multi-carousel';
-import 'react-multi-carousel/lib/styles.css';
 
 
 
 import Title from '../Components/Title/Title';
 import Image from './Components/Image'
+
+import OwlCarousel from 'react-owl-carousel';
+
+
+
+import 'owl.carousel/dist/assets/owl.carousel.css';
+import 'owl.carousel/dist/assets/owl.theme.default.css';
+import './Gallery.css';
 
 
 
@@ -43,8 +49,19 @@ import plafonnage12 from './assets/plafonnage12.jpeg'
 
 
 const Gallery = () => {
+
+    const imgs = [chantier, chantier1, chantier2, chantier4, chantier6, chantier9, group, group2, group3, maconnerie, maconnerie2, maconnerie3, maconnerie4, maconnerie5, maconnerie6, maconnerie7, maconnerie11, maconnerie13, plafonnage, plafonnage2, plafonnage3, plafonnage4, plafonnage5, plafonnage6, plafonnage7, plafonnage9, plafonnage12];
+
+
+    const [margin, setMargin] = useState(0);
     const [windowWidth, setWindowWidth] = useState(0);
-    const [additionalTransfrom, setAdditionalTransfrom] = useState(70);
+
+    const addMargin = () => {
+        const owl = document.querySelector('.owl-carousel.owl-theme.gallery');
+        let containerWidth = owl.offsetWidth;
+        let finalMargin = (containerWidth - 1500) / 2;
+        setMargin(finalMargin);
+    }
 
     useEffect(() => {
         const resizeWindow = () => {
@@ -52,12 +69,37 @@ const Gallery = () => {
         }
         window.addEventListener('resize', resizeWindow);
         if (windowWidth > 769) {
-            setAdditionalTransfrom(70);
-        } else if (windowWidth < 769 && windowWidth > 600) {
-            setAdditionalTransfrom(160);
+            addMargin()
+        } else {
+            setMargin(2000);
         }
     }, [windowWidth]);
 
+
+    const settings = {
+        loop: true,
+        margin: margin,
+        autoWidth: true,
+        center: true,
+        nav: true,
+        dots: false,
+        autoplay: true,
+        autoplayTimeout: 2500,
+        autoplayHoverPause: true,
+        responsiveClass: true,
+        responsive: {
+            0: {
+                items: 1
+            },
+            600: {
+                items: 1
+
+            },
+            1000: {
+                items: 3,
+            }
+        }
+    }
 
 
 
@@ -67,95 +109,11 @@ const Gallery = () => {
                 <Title title="Galerie" direction="left" icon={faImage}></Title>
             </div>
             <div className="gallery-container bg-white">
-
-                <Carousel
-                    additionalTransfrom={additionalTransfrom}
-                    arrows
-                    autoPlay
-                    autoPlaySpeed={4000}
-                    centerMode={false}
-                    className=""
-                    containerClass="container-with-dots"
-                    dotListClass=""
-                    draggable
-                    focusOnSelect={false}
-                    infinite
-                    itemClass=""
-                    keyBoardControl
-                    minimumTouchDrag={80}
-                    pauseOnHover
-                    renderArrowsWhenDisabled={false}
-                    renderButtonGroupOutside={false}
-                    renderDotsOutside={false}
-                    responsive={{
-                        desktop: {
-                            breakpoint: {
-                                max: 3000,
-                                min: 1024
-                            },
-                            items: 3,
-                            slidesToSlide: 3,
-                        },
-                        mobile: {
-                            breakpoint: {
-                                max: 464,
-                                min: 0
-                            },
-                            items: 1,
-                        },
-                        tablet: {
-                            breakpoint: {
-                                max: 1024,
-                                min: 464
-                            },
-                            items: 1,
-                            slidesToSlide: 2,
-                        }
-                    }}
-                    rewind={false}
-                    rewindWithAnimation={false}
-                    rtl={false}
-                    shouldResetAutoplay
-                    showDots={false}
-                    sliderClass=""
-                    swipeable
-                >
-
-
-                    <Image src={chantier9} alt={"chantier"} > </Image>
-                    <Image src={group} alt={"group"} > </Image>
-
-                    <Image src={maconnerie2} alt={"maconnerie"} > </Image>
-                    <Image src={maconnerie3} alt={"maconnerie"} > </Image>
-                    <Image src={maconnerie5} alt={"maconnerie"} > </Image>
-                    <Image src={maconnerie7} alt={"maconnerie"} > </Image>
-                    <Image src={maconnerie13} alt={"maconnerie"} > </Image>
-                    <Image src={maconnerie6} alt={"maconnerie"} > </Image>
-                    <Image src={maconnerie4} alt={"maconnerie"} > </Image>
-                    <Image src={plafonnage9} alt={"plafonnage"} > </Image>
-                    <Image src={plafonnage} alt={"plafonnage"} > </Image>
-                    <Image src={plafonnage2} alt={"plafonnage"} > </Image>
-                    <Image src={plafonnage3} alt={"plafonnage"} > </Image>
-                    <Image src={plafonnage4} alt={"plafonnage"} > </Image>
-                    <Image src={plafonnage5} alt={"plafonnage"} > </Image>
-                    <Image src={plafonnage6} alt={"plafonnage"} > </Image>
-                    <Image src={plafonnage7} alt={"plafonnage"} > </Image>
-
-                    <Image src={plafonnage12} alt={"plafonnage"} > </Image>
-                    <Image src={chantier6} alt={"plafonnage"} > </Image>
-
-
-                    <Image src={group2} alt={"group-pic"} > </Image>
-                    <Image src={maconnerie} alt={"maconnerie"} > </Image>
-                    <Image src={maconnerie11} alt={"maconnerie"} > </Image>
-                    <Image src={group3} alt={"team"} > </Image>
-
-                    <Image src={chantier4} alt={"chantier"} > </Image>
-                    <Image src={chantier2} alt={"chantier"} > </Image>
-                    <Image src={chantier1} alt={"chantier"} > </Image>
-                    <Image src={chantier} alt={"chantier"} > </Image>
-
-                </Carousel>
+                <OwlCarousel className='owl-theme gallery' {...settings} >
+                    {imgs.map((img, index) => {
+                        return <Image key={index} src={img} />
+                    })}
+                </OwlCarousel>
             </div>
 
             <div className="gallery-bottom"></div>

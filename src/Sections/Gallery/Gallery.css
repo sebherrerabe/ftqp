@@ -22,6 +22,39 @@
   height: 130px;
 }
 
+.square {
+  height: 500px;
+  width: 500px;
+  background-color: aqua;
+}
+.gallery .owl-nav {
+  display: flex;
+  justify-content: space-between;
+  height: 0;
+}
+.owl-theme.gallery .owl-nav [class*="owl-"] {
+  background-color: #222A35;
+  height: 35px;
+  width: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  transform: translate(0, -285px);
+  color: white;
+}
+.owl-theme.gallery .owl-nav [class*="owl-"]:hover {
+  color: #CA3F11;
+}
+.owl-theme.gallery .owl-nav [class*="owl-"] span {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2.5em;
+  padding-bottom: 7px;
+}
 @media screen and (max-width: 769px) {
   .img-gallery {
     width: 450px;
