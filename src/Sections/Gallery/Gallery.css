@@ -33,7 +33,7 @@
   height: 0;
 }
 .owl-theme.gallery .owl-nav [class*="owl-"] {
-  background-color: #222A35;
+  background-color: #222a35;
   height: 35px;
   width: 35px;
   display: flex;
@@ -44,7 +44,7 @@
   color: white;
 }
 .owl-theme.gallery .owl-nav [class*="owl-"]:hover {
-  color: #CA3F11;
+  color: #ca3f11;
 }
 .owl-theme.gallery .owl-nav [class*="owl-"] span {
   height: 100%;
@@ -59,5 +59,15 @@
   .img-gallery {
     width: 450px;
     height: 450px;
+  }
+}
+@media screen and (max-width: 426px) {
+  .gallery-container {
+    width: 100%;
+    padding: 0;
+  }
+  .img-gallery {
+    width: 350px;
+    height: 350px;
   }
 }

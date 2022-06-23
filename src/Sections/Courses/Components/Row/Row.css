@@ -22,7 +22,6 @@
   justify-content: flex-right;
 }
 
-
 @media screen and (max-width: 1024px) {
   /* .courses-row {
     margin:0px;
@@ -33,7 +32,6 @@
     
   } */
 }
-
 
 @media screen and (max-width: 769px) {
   .courses-row {
@@ -55,3 +53,4 @@
     margin-right: 0;
   }
 }
+

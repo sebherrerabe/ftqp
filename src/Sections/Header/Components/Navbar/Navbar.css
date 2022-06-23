@@ -94,15 +94,17 @@
 .inner-navbar-right ul li.x-mark {
   display: none;
 }
-@media screen and (max-width: 769px) {
-  .inner-navbar {
-    margin: 0 8%;
+@media screen and (max-width: 1025px) {
+  .inner-navbar-left {
+    width: 25%;
+    justify-content: flex-start;
   }
   .inner-navbar-left img {
-    height: 52px;
-    width: 120px;
+    height: 69px;
+    width: 160px;
   }
   .inner-navbar-right {
+    width: 75%;
     justify-content: flex-end;
   }
   .menu-burguer {
@@ -138,5 +140,15 @@
     align-items: flex-end;
     padding-right: 50px;
     color: white;
+  }
+}
+@media screen and (max-width: 769px) {
+  .inner-navbar {
+    margin: 0 8%;
+  }
+  
+  .inner-navbar-left img {
+    height: 52px;
+    width: 120px;
   }
 }

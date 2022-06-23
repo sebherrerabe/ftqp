@@ -178,11 +178,11 @@ input {
 @media only screen and (max-width: 769px) {
 
   .side {
-    width: 50px;
+    width: 8%;
   }
 
   .middle-container {
-    width: calc(100% - 100px);
+    width: calc(100% - 16%);
   }
   .contactcard{
     width: 60%;

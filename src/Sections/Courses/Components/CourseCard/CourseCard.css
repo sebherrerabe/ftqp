@@ -2,7 +2,6 @@
   margin: 0px 12%;
 }
 
-
 .course-card {
   height: 100%;
   width: calc(90% - 20px);
@@ -42,26 +41,23 @@
   border-radius: 20px;
 }
 
-.img-coursecard{
+.img-coursecard {
   width: 90%;
   height: 87%;
   background-size: cover;
-  background-position: bottom ;
+  background-position: bottom;
   border-radius: 20px;
 }
 
-
 @media screen and (max-width: 1024px) {
-
   .course-card {
     height: 100%;
     width: 700px;
-    }
+  }
 
-    .section-formationn {
-      margin: 0px 5%;
-    }
-
+  .section-formationn {
+    margin: 0px 5%;
+  }
 }
 
 @media screen and (max-width: 769px) {
@@ -70,11 +66,11 @@
     height: 480px;
     margin-top: 40px;
   }
-  .h3-right{
+  .h3-right {
     text-align: center;
     margin-right: 0;
   }
-  .h3-left{
+  .h3-left {
     text-align: center;
     margin-left: 0;
   }
@@ -87,5 +83,12 @@
 
   .section-formationn {
     margin: 0px 12%;
+  }
+}
+
+@media screen and (max-width: 426px) {
+  .img-coursecard {
+    width: 90%;
+    height: 70%;
   }
 }

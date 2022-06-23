@@ -16,10 +16,10 @@ const TeamSlider = () => {
     const [margin, setMargin] = useState(0);
     const [windowWidth, setWindowWidth] = useState(window.innerWidth);
 
-    const addMargin = () => {
+    const addMargin = (cardsSize) => {
         const owl = document.querySelector('.owl-carousel');
         let containerWidth = owl.offsetWidth;
-        let finalMargin = (containerWidth - 850) / 2;
+        let finalMargin = (containerWidth - cardsSize) / 2;
         setMargin(finalMargin);
     }
 
@@ -28,8 +28,10 @@ const TeamSlider = () => {
             setWindowWidth(window.innerWidth);
         }
         window.addEventListener('resize', resizeWindow);
-        if (windowWidth > 769) {
-            addMargin()
+        if (windowWidth > 1025) {
+            addMargin(850)
+        } else if (windowWidth > 940) {
+            addMargin(700)
         } else {
             setMargin(2000);
         }
