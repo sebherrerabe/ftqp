@@ -97,6 +97,7 @@
 @media screen and (max-width: 1024px) {
   .inner-navbar {
     margin: 0 8%;
+  }
     .inner-navbar-left {
     width: 25%;
     justify-content: flex-start;
