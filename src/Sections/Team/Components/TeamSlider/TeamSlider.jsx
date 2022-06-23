@@ -55,7 +55,9 @@ const TeamSlider = () => {
             },
             600: {
                 items: 1,
+
                 nav: false,
+
             },
             1000: {
                 items: 4,
