@@ -54,7 +54,7 @@ const Gallery = () => {
 
 
     const [margin, setMargin] = useState(0);
-    const [windowWidth, setWindowWidth] = useState(0);
+    const [windowWidth, setWindowWidth] = useState(window.innerWidth);
 
     const addMargin = () => {
         const owl = document.querySelector('.owl-carousel.owl-theme.gallery');
@@ -69,9 +69,13 @@ const Gallery = () => {
         }
         window.addEventListener('resize', resizeWindow);
         if (windowWidth > 769) {
+            console.log(windowWidth)
             addMargin()
         } else {
             setMargin(2000);
+        }
+        return () => {
+            window.removeEventListener('resize', resizeWindow);
         }
     }, [windowWidth]);
 
