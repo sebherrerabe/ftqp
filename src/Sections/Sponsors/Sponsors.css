@@ -1,13 +1,13 @@
 
 .sponsors {
   background: rgba(255, 255, 255, 0.959);
+  justify-content: center;
 }
 
 @media (max-width: 769px) {
 
   .main-container.sponsors {
     width: 100%;
-    min-height: 60vh;
     display: flex;
     flex-direction: column;
   }

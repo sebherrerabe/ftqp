@@ -55,9 +55,9 @@ p {
   body {
     font-size: 1em;
   }
-  /* .section-desc {
+  .section-desc {
     margin: 0 8%;
-  } */
+  }
 
   /* FOR SOME REASON WHEN I ACTIVATE THIS? IT MAKES CONFLICTS WITH THE NAVBAR */
 }
