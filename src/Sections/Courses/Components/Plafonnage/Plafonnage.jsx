@@ -4,7 +4,7 @@ import CourseCard from "../CourseCard/CourseCard";
 import Task from "../Task/Task";
 
 
-import plafonnage from "../../assets/plafonnage.jpg";
+import plafonnage9 from "../../assets/plafonnage9.jpeg";
 
 
 
@@ -14,7 +14,7 @@ const Plafonnage = () => {
 
 
     return <Row left={
-        <CourseCard title="Plafonnage" img={plafonnage} direction="right" />
+        <CourseCard title="Plafonnage" img={plafonnage9} direction="right" />
     } right={
         < InfoCard direction="left">
             <div className="card-inner">
