@@ -160,18 +160,18 @@ input {
   cursor: pointer;
 }
 
-.visible-warning-message{
-    color:white;
-   text-align:center;
-   font-size: 0.7em;
-   /* margin-bottom:15px !important; */
-   /* height: 100px; */
+.visible-warning-message {
+  color: white;
+  text-align: center;
+  font-size: 0.7em;
+  /* margin-bottom:15px !important; */
+  /* height: 100px; */
 }
 
 .invisible-warning-message {
-   color:white;
-   display:none;
-   margin-bottom:15px;
+  color: white;
+  display: none;
+  margin-bottom: 15px;
 }
 
 @media only screen and (max-width: 1024px) {
@@ -186,28 +186,24 @@ input {
 
 
 @media only screen and (max-width: 769px) {
-
   .side {
-    width: 50px;
+    width: 8%;
   }
 
   .middle-container {
-    width: calc(100% - 100px);
-    justify-content: center;
+    width: calc(100% - 16%);
   }
-  .contactcard{
+  .contactcard {
     width: 60%;
   }
 
-
-   input,
+  input,
   textarea {
     font-size: 0.7em;
   }
 
-  .visible-warning-message{  
-  margin-top:5px !important;
-  
+  .visible-warning-message {
+    margin-top: 5px !important;
   }
 
   form textarea {
@@ -222,38 +218,39 @@ input {
     background-position: left;
     border-radius: 0 20px 20px 0;
   }
-
 }
 
-
-
-
-
-
 @media only screen and (max-width: 600px) {
-
-  .title-bar{
+  .title-bar {
     width: calc(100% - 25px);
-   }
-
-   .middle-container{
-    width: calc(100% - 16%);
   }
-  
+  input,
+  textarea {
+    font-size: 0.6em;
+  }
 
-  .contactcard{
+  .middle-container {
+    width: calc(100% - 16%);
+    height: 580px;
+  }
+  .side {
+    height: 580px;
+  }
+  form .mg-top-40 {
+    margin-top: 20px;
+  }
+
+  .contactcard {
     border-radius: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 100%;
-    }
-    .picture{
-        display: none
-    }
+  }
+  .picture {
+    display: none;
+  }
 }
-
-
 
 /* @media only screen and (max-width: 400px) {
 
@@ -269,4 +266,3 @@ input {
   
 
 } */
-
