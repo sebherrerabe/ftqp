@@ -10,7 +10,7 @@ const Maconerie = () => {
 
     const tasks = [{ title: "Mortier", img: "" }, { title: "Cimentage", img: "" }, { title: "Enduit", img: "" }]
 
-    return <Row left={
+    return <Row newClass="maconerie" left={
         < InfoCard >
             <div className="card-inner">
                 <h3 className="info maconerie">Vous apprendrez a</h3>

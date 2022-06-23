@@ -55,7 +55,7 @@ const FooterMidlle = () => {
 
                 <h4 className='horaire'>Horaire</h4>
                 {open.map(jour => <>
-                    <p className='paragraph'> <b>{jour.day} :</b>  {jour.time} </p>
+                    <p key={open.id} className='paragraph'> <b>{jour.day} :</b>  {jour.time} </p>
                 </>
                 )
                 }

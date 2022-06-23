@@ -29,3 +29,18 @@
 .inner-title.right {
   margin: auto 12% auto 0;
 }
+
+@media screen and (max-width: 769px) {
+  .title.left {
+    margin: 85px 8% 0 0;
+  }
+  .title.right {
+    margin: 85px 0 0 8%;
+  }
+  .inner-title.left {
+    margin: auto 0 auto 8%;
+  }
+  .inner-title.right {
+    margin: auto 8% auto 0;
+  }
+}
