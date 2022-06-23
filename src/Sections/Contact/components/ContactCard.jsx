@@ -61,9 +61,9 @@ const ContactCard = ({ children, img, content }) => {
 
    
 
-  useEffect(() => {
-    console.log(newRef.current.clientHeight);
-  }, []);
+  // useEffect(() => {
+  //   console.log(newRef.current.clientHeight);
+  // }, []);
 
   return (
     <div className="contactcard-container" >
