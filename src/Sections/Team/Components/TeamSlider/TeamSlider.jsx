@@ -14,7 +14,7 @@ import './TeamSlider.css';
 const TeamSlider = () => {
 
     const [margin, setMargin] = useState(0);
-    const [width, setWidth] = useState(0);
+    const [windowWidth, setWindowWidth] = useState(0);
 
     const addMargin = () => {
         const owl = document.querySelector('.owl-carousel');
@@ -25,15 +25,17 @@ const TeamSlider = () => {
 
     useEffect(() => {
         const resizeWindow = () => {
-            setWidth(window.innerWidth);
+            setWindowWidth(window.innerWidth);
         }
         window.addEventListener('resize', resizeWindow);
-    }, []);
+        if (windowWidth > 769) {
+            addMargin()
+        } else {
+            setMargin(2000);
+        }
+    }, [windowWidth]);
 
 
-    useEffect(() => {
-        addMargin();
-    }, [width]);
 
     const settings = {
         loop: true,
@@ -49,9 +51,11 @@ const TeamSlider = () => {
         responsive: {
             0: {
                 items: 1,
+                nav: false,
             },
             600: {
-                items: 3,
+                items: 1,
+                nav: false,
             },
             1000: {
                 items: 4,
