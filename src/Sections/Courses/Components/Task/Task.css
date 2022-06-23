@@ -21,7 +21,15 @@
   width: 140px;
   border-radius: 20px;
 }
+@media screen and (max-width: 1024px) {
+  .task-img {
+    height: 95px;
+    width: 95px;
+   
+  }
 
+  .tasks-container {
+  justify-content: space-around;
 @media screen and (max-width: 426px) {
   .tasks-container {
     flex-direction: column;

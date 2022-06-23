@@ -22,7 +22,7 @@ const Courses = () => {
         <section className="section main-container" id="nos-formations">
             <div className="courses-container">
                 <Title title="Nos Formations" icon={faPersonDigging} direction="right" />
-                <div className="section-desc mg-top-40">
+                <div className="section-formationn mg-top-40">
                     <Desc />
                     <Plafonnage />
                     <Maconerie />

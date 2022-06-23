@@ -13,7 +13,7 @@ const Desc = () => {
             inventore aperiam assumenda beatae fugiat tenetur quisquam nemo nihil sunt minus.</p>
     } right={
         <InfoCard direction="left">
-            <div className="card-inner desc">
+            <div className="card-inner desc mg-top-40">
                 <h3 className="info">Pour suivre une formation vous avez besoin d'...</h3>
                 <ul>
                     <li><div className="inner-li"><img src={age} alt="logo plus de 18 ans" /> Avoir plus de 18 ans.</div></li>
