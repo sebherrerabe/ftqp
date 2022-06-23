@@ -27,7 +27,7 @@
 
 }
 .card-inner p {
-  font-weight: 600;
+  /* font-weight: 600; */
 }
 .maconerie {
   text-align: right;
@@ -36,11 +36,10 @@
 @media screen and (max-width: 1024px) {
   
   .courses-container h3.info {
-    
-    font-size: 1.2em;
+    font-size: 20pt;
   }
   .courses-container p {
-    font-size: 1em;
+    font-size: 18pt;
   }
 
   .card-inner {

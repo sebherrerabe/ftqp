@@ -94,7 +94,7 @@
 .inner-navbar-right ul li.x-mark {
   display: none;
 }
-@media screen and (max-width: 769px) {
+@media screen and (max-width: 1024px) {
   .inner-navbar {
     margin: 0 8%;
   }
