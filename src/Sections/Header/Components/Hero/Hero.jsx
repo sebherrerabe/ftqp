@@ -20,8 +20,8 @@ const Hero = () => {
         </div>
         <div className="bottom-div">
           <div className="btn-container">
-            <button className="btn-hero mg-top-40">
-              <FontAwesomeIcon icon={faPaperPlane} />Contactez-nous</button>
+            <a href='#contact' className="btn-hero mg-top-40">
+              <FontAwesomeIcon icon={faPaperPlane} />Contactez-nous</a>
             <ul className="icons">
               <li>
                 <a href="/">

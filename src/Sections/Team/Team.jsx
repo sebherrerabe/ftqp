@@ -13,7 +13,7 @@ const Team = () => {
         <div className="team-container bg-white">
             <Title direction="left" title="Notre Equipe" icon={faPeopleGroup} />
             <div className="section-desc mg-top-100">
-                <p className="desc">
+                <p className="desc team">
                     Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia
                     fuga accusamus sed saepe. Sint tempora incidunt, ducimus inventore
                     officiis vitae temporibus. Libero distinctio unde facere aperiam? Sunt

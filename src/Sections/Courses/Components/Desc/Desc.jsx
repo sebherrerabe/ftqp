@@ -15,12 +15,22 @@ const Desc = () => {
         <InfoCard direction="left">
             <div className="card-inner desc mg-top-40">
                 <h3 className="info">Pour suivre une formation vous avez besoin d'...</h3>
-                <ul>
-                    <li><div className="inner-li"><img src={age} alt="logo plus de 18 ans" /> Avoir plus de 18 ans.</div></li>
-                    <li><div className="inner-li"><img src={certificate} alt="logo de certificat" /> Etre détenteur d'un CEB ou d'un CESI ou le niveau équivalent.</div>
-                    </li>
-                    <li><div className="inner-li"><img src={actiris} alt="logo d'Actiris" />Etre inscrit comme demandeur d'emploi et titulaire du document A15.</div> </li>
-                </ul>
+                <table className="info-table">
+                    <tbody>
+                        <tr>
+                            <td className="td-logo"><img src={age} alt="logo plus de 18 ans" /></td>
+                            <td className="td-info">Avoir plus de 18 ans.</td>
+                        </tr>
+                        <tr>
+                            <td className="td-logo"><img src={certificate} alt="logo de certificat" /></td>
+                            <td className="td-info">Etre détenteur d'un CEB ou d'un CESI ou le niveau équivalent.</td>
+                        </tr>
+                        <tr>
+                            <td className="td-logo"><img src={actiris} alt="logo d'Actiris" /></td>
+                            <td className="td-info">Etre inscrit comme demandeur d'emploi et titulaire du document A15.</td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
         </InfoCard>
     } />

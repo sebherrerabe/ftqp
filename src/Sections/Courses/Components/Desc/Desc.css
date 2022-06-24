@@ -1,26 +1,26 @@
-.desc ul {
-  list-style: none;
-  display: flex;
-  flex-direction: column;
+.info-table {
+  height: 200px;
+  width: 95%;
+  margin-left: 5%;
   font-size: 1.2em;
 }
-.desc ul li img {
-  width: 40px;
+.td-logo {
+  width: 10%;
+}
+.td-logo img {
   height: 40px;
-  margin-right: 20px;
+  width: 40px;
 }
-.desc ul li {
-    margin-bottom: 40px;
-}
-.inner-li {
-  display: flex;
-  align-items: center;
+.td-info {
+  text-align: left;
 }
 
-@media screen and (max-width: 1024px) {
-
-  .desc ul {
-    
-    font-size: 18pt;
+@media screen and (max-width: 426px) {
+  .td-logo img {
+    height: 30px;
+    width: 30px;
+  }
+  .info-table{
+    font-size: 1em;
   }
 }

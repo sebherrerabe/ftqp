@@ -28,18 +28,15 @@
   }
 
   .tasks-container {
-  justify-content: space-around;
+    justify-content: space-around;
   }
 }
 @media screen and (max-width: 426px) {
-  .tasks-container {
-    /* flex-direction: column;
-    justify-content: initial;
-    align-items: space-between; */
-  }
-
   .task-img {
-    height: 85px;
-    width: 85px;
+    height: 80px;
+    width: 80px;
+  }
+  .task {
+    font-size: 1em;
   }
 }
