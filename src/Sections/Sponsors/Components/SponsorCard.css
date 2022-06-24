@@ -34,3 +34,22 @@
     min-height: 60vh;
   }
 }
+
+@media only screen and (max-width: 420px) { 
+
+  .hi {
+    width: 130px;
+    height: 130px;
+  }
+
+  .icon-container {
+    justify-content: center space-between;
+   
+   
+  }
+  .main-container.sponsors{
+   min-height: 80vh !important;
+   
+  }
+  
+}
