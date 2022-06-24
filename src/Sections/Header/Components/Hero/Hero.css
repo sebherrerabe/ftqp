@@ -2,7 +2,7 @@
   height: 100vh;
   width: 100%;
   z-index: 2;
-  font-size: 1.5em;
+  font-size: 1.6em;
 }
 .inner-container {
   height: 100%;
@@ -22,7 +22,8 @@
 h1 {
   max-width: 80%;
   margin: 0;
-  text-align: left;
+  
+  text-align: center;
 }
 h1 span {
   background-color: #ca3f11;
@@ -40,9 +41,10 @@ h1 span {
   flex-direction: column;
 }
 .btn-hero {
+  text-decoration: none;
   border: none;
   font-size: 0.8em;
-  font-weight: 600;
+  font-weight: 700;
   color: #222a35;
   padding: 20px;
   border-radius: 20px;
@@ -83,7 +85,6 @@ h1 span {
   }
   h1 {
     max-width: 100%;
-    text-align: center;
   }
 }
 

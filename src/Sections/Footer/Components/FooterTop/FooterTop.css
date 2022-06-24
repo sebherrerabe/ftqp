@@ -17,7 +17,7 @@
   flex-direction: row-reverse;
 }
 
-.info {
+.info.footer {
   display: flex;
   align-items: center;
 }

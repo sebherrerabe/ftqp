@@ -69,7 +69,6 @@ const Gallery = () => {
         }
         window.addEventListener('resize', resizeWindow);
         if (windowWidth > 1024) {
-            console.log(windowWidth)
             addMargin()
         } else {
             setMargin(2000);
