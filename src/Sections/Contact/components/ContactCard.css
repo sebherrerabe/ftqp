@@ -176,8 +176,12 @@ input {
 
 @media only screen and (max-width: 1024px) {
 
+  .contactcard {
+    width: 55%;
+  }
+
   .picture{
-    width: 50%;
+    width: 45%;
   }
  .middle-container {
   justify-content: center;
@@ -194,7 +198,7 @@ input {
     width: calc(100% - 16%);
   }
   .contactcard {
-    width: 60%;
+    width: 65%;
   }
 
   input,
@@ -212,7 +216,7 @@ input {
 
   .picture {
     height: 100%;
-    width: 60%;
+    width: 50%;
     background-image: url("../assets/1.jpg");
     background-size: cover;
     background-position: left;

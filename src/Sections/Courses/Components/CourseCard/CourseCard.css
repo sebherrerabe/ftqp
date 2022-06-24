@@ -51,8 +51,8 @@
 
 @media screen and (max-width: 1024px) {
   .course-card {
-    height: 100%;
-    width: 700px;
+    height: 400px;
+    width: 500px;
   }
 
   .section-formationn {
@@ -89,6 +89,15 @@
 @media screen and (max-width: 426px) {
   .img-coursecard {
     width: 90%;
-    height: 70%;
+    height: 80%;
+    
+  }
+
+  .course-card {
+    height: 300px ;
+  }
+
+  .course-card-top {
+    /* height: 15%; */
   }
 }
