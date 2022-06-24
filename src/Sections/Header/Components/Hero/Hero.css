@@ -86,3 +86,12 @@ h1 span {
     text-align: center;
   }
 }
+
+
+@media (max-width: 769px) {
+
+  h1 {
+    font-size: 1.7em;
+  }
+
+}  
