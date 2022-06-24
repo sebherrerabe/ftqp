@@ -1,0 +1,15 @@
+.footer-line {
+  height: 10%;
+  width: 100%;
+  background-color: #ca3f11;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+@media screen and (max-width: 426px) {
+  .footer-line {
+    height: 5%;
+  }
+}
