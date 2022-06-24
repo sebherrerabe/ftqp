@@ -1,8 +1,8 @@
 
 
-import FooterTop from './Components/FooterTop';
-import FooterMiddle from './Components/FooterMiddle';
-import FooterBottom from './Components/FooterBottom';
+import FooterTop from './Components/FooterTop/FooterTop';
+import FooterMiddle from './Components/FooterMiddle/FooterMiddle';
+import FooterBottom from './Components/FooterBottom/FooterBottom';
 
 import './Footer.css';
 

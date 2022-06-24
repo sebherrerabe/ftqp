@@ -1,8 +1,19 @@
 .footer-background {
-    background-color: #222A35;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 100%;
-    min-height: 80vh;
+  background-color: #222a35;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 80vh;
+  color: white;
+}
+
+@media screen and (max-width: 769px) {
+  .footer-background {
+    height: 60vh;
+  }
+}
+@media screen and (max-width: 426px) {
+  .footer-background {
+    height: 100vh;
+  }
 }

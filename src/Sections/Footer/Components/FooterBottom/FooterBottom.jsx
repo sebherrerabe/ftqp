@@ -1,7 +1,7 @@
 
 
 
-import './Footer.css'
+import './FooterBottom.css'
 
 
 const FooterBottom = () =>{
