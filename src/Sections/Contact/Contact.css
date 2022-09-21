@@ -1,12 +1,12 @@
 #contact {
-  min-height: 100vh;
+  min-height: max-content;
 }
 .contact-top {
   background-color: white;
   padding-bottom: 100px;
 }
 .contact-bottom {
-  height: 100px;
+  height: 200px;
   width: 100%;
   background-color: white;
 }
