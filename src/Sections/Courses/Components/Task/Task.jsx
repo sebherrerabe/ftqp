@@ -1,11 +1,15 @@
-import './Task.css'
+import "./Task.css";
 
-const Task = ({ img, title }) => {
-    return <div className="task">
-        <div className="task-img" style={{ backgroundImage: `url(${img})` }}>
-        </div>
-        <h4>{title}</h4>
+const Task = ({ img, titre }) => {
+  return (
+    <div className="task">
+      <div
+        className="task-img"
+        style={{ backgroundImage: `url(${img})`, backgroundPosition: "center", backgroundSize: "cover" }}
+      ></div>
+      <h4>{titre}</h4>
     </div>
-}
+  );
+};
 
 export default Task;
